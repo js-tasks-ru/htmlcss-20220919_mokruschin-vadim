@@ -1,0 +1,61 @@
+/* ==================== COMMON ========================== */
+
+.button {
+    margin: 0;
+    padding: 0 30px; /* если будет длинный текст в кнопке, чтобы не упёрся в углы кнопки */
+    border: none;
+    border-radius: 8px;
+    min-width: 187px; /* чтобы кнопки с коротким текстом были одной ширины */
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background .25s ease, box-shadow .1s ease;
+}
+
+/* .button[disabled] {
+    opacity: 0.5;
+    cursor: pointer;
+} */
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.button:active:enabled {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+/* ==================== PRIMARY ========================== */
+
+.button_primary {
+    background: var(--bg-primary);
+    color: var(--color-primary);
+}
+
+.button_primary:hover:enabled {
+    background: var(--bg-primary-hover);
+}
+
+/* ==================== SECONDARY ========================== */
+
+.button_secondary {
+    background: var(--bg-secondary);
+    color: var(--color-secondary);
+}
+
+.button_secondary:hover:enabled {
+    background: var(--bg-secondary-hover);
+}
+
+/* ==================== ALTERNATE ========================== */
+
+.button_alternate {
+    background: var(--bg-alternate);
+    border: 1px solid var(--grey-3);
+    color: var(--color-alternate);
+}
+
+.button_alternate:hover:enabled {
+    border: 1px solid var(--black);
+}

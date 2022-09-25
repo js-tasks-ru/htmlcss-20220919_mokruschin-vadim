@@ -1,4 +1,5 @@
 @import '../fonts/fonts.css';
+@import './reset.css';
 
 :root {
     --white: #ffffff;
@@ -15,8 +16,17 @@
     --error: var(--red);
     --success: var(--blue);
 
-    --primary: var(--blue);
-    --secondary: var(--purple);
+    --bg-primary: var(--blue);
+    --bg-primary-hover: #2342C0;
+    --color-primary: var(--white);
+
+    --bg-secondary: var(--purple);
+    --bg-secondary-hover: #5028C6;
+    --color-secondary: var(--white);
+
+    --bg-alternate: var(--white);
+    --color-alternate: var(--grey-4);
+
 }
 
 * {
