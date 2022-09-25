@@ -1,5 +1,9 @@
 @import '../fonts/fonts.css';
 
+@import './header/header.css';
+@import './main/main.css';
+@import './footer/footer.css';
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -21,4 +25,10 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
