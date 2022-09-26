@@ -17,11 +17,6 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
-    --error: var(--red);
-    --success: var(--blue);
-
-    --primary: var(--blue);
-    --secondary: var(--purple);
 }
 
 * {
@@ -30,6 +25,6 @@
 
 .content {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1110px;
     margin: 0 auto;
 }
