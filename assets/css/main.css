@@ -1,22 +1,44 @@
 @import './reset.css';
 @import '../fonts/fonts.css';
+@import './reset.css';
 
 @import './header/header.css';
 @import './main/main.css';
 @import './footer/footer.css';
 
 :root {
+    /* COLORS */
     --white: #ffffff;
     --black: #212429;
     --pink: #F784AD;
-    --purple: #7048E8;
-    --blue: #374FC7;
+    --purple-1: #7048E8;
+    --purple-2: #5028C6;
+    --blue-1: #374FC7;
+    --blue-2: #2342C0;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
+    /* LAYER */
+    --error: var(--red);
+    --success: var(--blue-1);
+
+    --primary: var(--blue-1);
+    --primary-hover: var(--blue-2);
+    --primary-color: var(--white);
+
+    --secondary: var(--purple-1);
+    --secondary-hover: var(--purple-2);
+    --secondary-color: var(--white);
+
+    --alternate: var(--white);
+    --alternate-color: var(--grey-4);
+    --alternate-border: var(--grey-3);
+    --alternate-border-hover: var(--black);
+
+    --opacity-disabled: 0.5;
 }
 
 * {
