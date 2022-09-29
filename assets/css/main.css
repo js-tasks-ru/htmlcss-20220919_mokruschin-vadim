@@ -3,7 +3,7 @@
 @import './reset.css';
 
 @import './header/header.css';
-@import './main/main.css';
+@import './preview/preview.css';
 @import './footer/footer.css';
 
 :root {
@@ -45,7 +45,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.content {
+.container {
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
