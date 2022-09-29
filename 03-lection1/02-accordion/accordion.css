@@ -51,8 +51,3 @@
     height: 10px;
     transform: rotate(180deg);
 }
-
-.accordion>.accordion__header__title {
-    /* Работает без этого */
-    /* list-style: none; */
-}
