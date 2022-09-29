@@ -1,5 +1,10 @@
+@import './reset.css';
 @import '../fonts/fonts.css';
 @import './reset.css';
+
+@import './header/header.css';
+@import './main/main.css';
+@import './footer/footer.css';
 
 :root {
     /* COLORS */
@@ -38,4 +43,10 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
 }
