@@ -27,7 +27,7 @@
 .skeleton__abstract__avatar {
     width: 64px;
     height: 64px;
-    background: #DDE2E5;
+    background: var(--grey-2);
     border-radius: 50%;
     margin-right: 16px;
 }
@@ -46,7 +46,7 @@
     height: 20px;
     margin-bottom: 8px;
     padding: 0;
-    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__stripe:last-child {
