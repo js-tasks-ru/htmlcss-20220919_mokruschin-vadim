@@ -38,6 +38,8 @@
     --alternate-border: var(--grey-3);
     --alternate-border-hover: var(--black);
 
+    --preview-bg: #F9FAFC;
+
     --opacity-disabled: 0.5;
 }
 
