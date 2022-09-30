@@ -1,11 +1,12 @@
+/* COMMON */
 @import './reset.css';
 @import '../fonts/fonts.css';
 @import './reset.css';
 
-@import './header/header.css';
-@import './preview/preview.css';
-@import './footer/footer.css';
-
+/* COMPONENTS */
+@import '../../components/header/header.css';
+@import '../../components/preview/preview.css';
+@import '../../components/footer/footer.css';
 @import '../../components/card/card.css';
 
 :root {
