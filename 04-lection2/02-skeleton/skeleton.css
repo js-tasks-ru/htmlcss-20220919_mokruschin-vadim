@@ -48,15 +48,15 @@
     margin-bottom: 0;
 }
 
-.skeleton__stripe_sm {
+.skeleton__stripe_size_sm {
     width: 172px;
 }
 
-.skeleton__stripe_md {
+.skeleton__stripe_size_md {
     width: 257px;
 }
 
-.skeleton__stripe_lg {
+.skeleton__stripe_size_lg {
     width: 515px;
 }
 
