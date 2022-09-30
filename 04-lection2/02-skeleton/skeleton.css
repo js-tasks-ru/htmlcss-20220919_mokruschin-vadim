@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.skeleton__abstract__avatar {
+.skeleton__avatar {
     width: 64px;
     height: 64px;
     background: var(--grey-2);
@@ -32,12 +32,7 @@
     margin-right: 16px;
 }
 
-.skeleton__abstract__titles-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.skeleton__abstract__titles-wrapper {
+.skeleton__titles-wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -53,8 +48,6 @@
     margin-bottom: 0;
 }
 
-/*  Это я таким образом попытался создать 
-    переиспользуемый элемент полоски */
 .skeleton__stripe_sm {
     width: 172px;
 }
