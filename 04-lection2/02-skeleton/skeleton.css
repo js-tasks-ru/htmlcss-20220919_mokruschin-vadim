@@ -2,20 +2,13 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 579px;
-    height: 192px;
     background: var(--white);
-    border: 1px solid var(--grey-3);
+    /* оutline убрал артефакты с
+    добавлением 2px к высоте скелетона */
+    outline: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 24px 40px 32px 24px;
-
-    transition: all 0.25s ease;
 }
-
-/* .skeleton:hover {
-    cursor: pointer;
-    transform: translateY(-10px);
-} */
 
 .skeleton__abstract {
     display: flex;
@@ -33,8 +26,7 @@
 }
 
 .skeleton__titles-wrapper {
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 }
 
 .skeleton__stripe {
@@ -48,18 +40,18 @@
     margin-bottom: 0;
 }
 
-.skeleton__stripe_sm {
-    width: 172px;
-}
-
-.skeleton__stripe_md {
-    width: 257px;
-}
-
-.skeleton__stripe_lg {
-    width: 515px;
-}
-
 .skeleton__stripe:last-child {
     margin-bottom: 0;
+}
+
+.skeleton__stripe_size_sm {
+    width: 39.5%;
+}
+
+.skeleton__stripe_size_md {
+    width: 59%;
+}
+
+.skeleton__stripe_size_lg {
+    /* width: 100%; */
 }
