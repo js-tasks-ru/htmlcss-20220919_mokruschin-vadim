@@ -1,10 +1,13 @@
+/* COMMON */
 @import './reset.css';
 @import '../fonts/fonts.css';
 @import './reset.css';
 
-@import './header/header.css';
-@import './preview/preview.css';
-@import './footer/footer.css';
+/* COMPONENTS */
+@import '../../components/header/header.css';
+@import '../../components/preview/preview.css';
+@import '../../components/footer/footer.css';
+@import '../../components/card/card.css';
 
 :root {
     /* COLORS */
@@ -37,6 +40,8 @@
     --alternate-color: var(--grey-4);
     --alternate-border: var(--grey-3);
     --alternate-border-hover: var(--black);
+
+    --preview-bg: #F9FAFC;
 
     --opacity-disabled: 0.5;
 }

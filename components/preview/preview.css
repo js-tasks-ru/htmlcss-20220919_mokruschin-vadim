@@ -1,0 +1,18 @@
+.preview {
+    background: var(--preview-bg);
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.preview__block {
+    margin-top: 67px;
+    margin-bottom: 204px;
+    display: flex;
+}
+
+.preview__cards-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    margin: 67px 0 204px;
+}
