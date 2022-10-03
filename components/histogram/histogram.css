@@ -6,10 +6,6 @@
     padding: 16px 24px 24px 24px;
 }
 
-.histogram_preview {
-    height: 157px;
-}
-
 .histogram__wrapper {
     display: flex;
     flex-direction: column;
