@@ -47,7 +47,6 @@
 
 /* ----------------------------------- */
 
-.histogram_card {
+.card__histogram {
     margin: 61px 25px 0;
-    height: 157px;
 }
