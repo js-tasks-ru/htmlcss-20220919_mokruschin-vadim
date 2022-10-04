@@ -8,6 +8,7 @@
 @import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
 @import '../../components/card/card.css';
+@import '../../components/histogram/histogram.css';
 
 :root {
     /* COLORS */
@@ -42,6 +43,7 @@
     --alternate-border-hover: var(--black);
 
     --preview-bg: #F9FAFC;
+    --histogram-column: #4263EB; 
 
     --opacity-disabled: 0.5;
 }
