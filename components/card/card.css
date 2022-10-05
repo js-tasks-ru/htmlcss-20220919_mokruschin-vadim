@@ -50,3 +50,25 @@
 .card__histogram {
     margin: 61px 25px 0;
 }
+
+
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:768px) {
+    .card {
+        width: 164px;
+        height: 231px;
+        padding: 8px;
+    }
+
+    .card__title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card__subtitle {
+        display: none;
+    }
+}

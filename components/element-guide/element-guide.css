@@ -16,6 +16,29 @@
     color: var(--grey-4);
 }
 
-.element-guide__body {
-    
+.element-guide__body {}
+
+
+@media screen and (max-width:1280px) {
+    .element-guide {
+        padding: 32px 24px;
+    }
+
+    .element-guide__title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .element-guide {
+        border-radius: 0;
+        padding: 32px 16px 15px;
+    }
+
+    .element-guide__title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: var(--grey-4);
+    }
 }
