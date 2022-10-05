@@ -1,0 +1,63 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(196, 196, 196, 0.5);
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.modal__dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 14px;
+}
+
+.modal__dialog_size_standart {
+    width: 428px;
+}
+
+.modal__header-wrapper {
+    margin-left: 40px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__title {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: var(--modal-title-color);
+}
+
+.modal__close-cross {
+    height: 16px;
+    width: 16px;
+    margin-top: 12px;
+    background: url(./cross.svg) center no-repeat;
+}
+
+.modal__close-cross:hover {
+    cursor: pointer;
+}
+
+.modal__body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    margin: 0px 40px 33px;
+}
