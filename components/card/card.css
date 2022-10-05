@@ -71,4 +71,8 @@
     .card__subtitle {
         display: none;
     }
+
+    .card__histogram {
+        /* margin: 44px 11px 0; */
+    }
 }

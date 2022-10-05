@@ -1,4 +1,6 @@
 .header {
+    display: flex;
+    justify-content: center;
     font-family: 'Inter', sans-serif;
     background: var(--white);
     padding-top: 25px;
@@ -129,6 +131,14 @@
 
     .header__wrapper {
         gap: 30px;
+    }
+
+    .header__top-nav-wrapper {
+        gap: 12px;
+    }
+
+    .header__right-side-wrapper {
+        gap: 36px;
     }
 
     .header_size_small {

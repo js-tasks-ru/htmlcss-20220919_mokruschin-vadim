@@ -8,6 +8,11 @@
     height: 100%;
 }
 
+.preview-template__main {
+    display: flex;
+    justify-content: center;
+}
+
 .preview-template__wrapper {
     display: grid;
     grid-template-columns: 200px 1fr;

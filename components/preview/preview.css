@@ -1,4 +1,6 @@
 .preview {
+    display: flex;
+    justify-content: center;
     background: var(--preview-bg);
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
@@ -14,14 +16,18 @@
 
 
 @media screen and (max-width:1280px) {
-    .preview {
-        padding: 0 25px;
-    }
+    .preview {}
 
     .preview__cards-wrapper {
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 40px 0 102px;
         gap: 20px
+    }
+}
+
+@media screen and (max-width:819px) {
+    .preview__cards-wrapper {
+        justify-content: center;
     }
 }
 

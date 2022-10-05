@@ -76,3 +76,18 @@
     height: 0%;
     transition: all 0.75s ease;
 }
+
+
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:768px) {
+    .histogram {
+        /* width: 145px;
+        height: 76px; */
+        transform: scale(0.75);
+    }
+    .histogram__chart {
+         
+    }
+}

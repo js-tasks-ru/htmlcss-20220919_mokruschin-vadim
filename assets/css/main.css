@@ -62,22 +62,25 @@ html, body {
     height: 100%;
 }
 
-.wrapper {}
-
 .container {
     width: 100%;
     max-width: 1110px;
-    margin: 0 auto;
 }
+
+.container_mod {}
 
 @media screen and (max-width:1280px) {
     .container {
-        max-width: 950px;
+        max-width: 900px;
+        margin: 0 50px;
     }
-
-    /* .wrapper {
-        padding: 0 25px;
-    } */
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .container {
+        margin: 0 16px;
+    }
+    .container_mod {
+        margin: 0;
+    }
+}
