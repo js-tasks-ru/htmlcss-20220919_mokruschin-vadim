@@ -1,12 +1,13 @@
 .header {
     font-family: 'Inter', sans-serif;
     background: var(--white);
-    padding: 96px 0 77px;
+    padding-top: 25px;
+    padding-bottom: 13px;
 }
 
 .header_size_small {
-    padding: 0;
-    height: 82px;
+    padding-bottom: 62px;
+    background: transparent;
 }
 
 .header__title {
@@ -14,4 +15,108 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
+}
+
+
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header__top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo {
+    background: url('./logo.svg');
+    width: 110px;
+    height: 32px;
+}
+
+
+
+.header__right-side-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+}
+
+.header__top-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.header__nav-link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ACB5BD;
+    text-decoration: none;
+}
+
+.header__nav-link_selected {
+    color: var(--black);
+}
+
+
+
+.header__icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.header__icon-sun {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: url('./sun.svg');
+}
+
+.header__icon-toggle {
+    cursor: pointer;
+    width: 52px;
+    height: 28px;
+    background: url('./toggle.svg');
+}
+
+.header__icon-moon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: url('./moon.svg') center no-repeat;
+}
+
+
+
+
+.header__bottom-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.header__bottom-nav-link_selected {
+    color: var(--black);
+    position: relative;
+}
+
+.header__bottom-nav-link_selected::after {
+    position: absolute;
+    content: '';
+    bottom: -13px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--black);
 }
