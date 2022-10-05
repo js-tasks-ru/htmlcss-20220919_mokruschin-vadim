@@ -3,6 +3,11 @@
     padding: 71px 0 136px;
 }
 
+.footer_preview-template {
+    /* встраивается в preview-template */
+    padding: 92px 0 56px;
+}
+
 .footer__title {
     font-weight: 500;
     font-size: 38px;
@@ -17,6 +22,15 @@
     line-height: 24px;
     text-align: center;
     color: var(--black);
+}
+
+.footer__text_preview-template {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
 }
 
 .footer__wrapper {

@@ -9,11 +9,17 @@
 @import '../../components/footer/footer.css';
 @import '../../components/card/card.css';
 @import '../../components/histogram/histogram.css';
+@import '../../components/menu/menu.css';
+@import '../../components/element-guide/element-guide.css';
+
+@import '../../pages/page-template/page-template.css';
+
 
 :root {
     /* COLORS */
     --white: #ffffff;
     --black: #212429;
+    --black-2: 000000;
     --pink: #F784AD;
     --purple-1: #7048E8;
     --purple-2: #5028C6;
@@ -32,7 +38,6 @@
     --primary: var(--blue-1);
     --primary-hover: var(--blue-2);
     --primary-color: var(--white);
-
     --secondary: var(--purple-1);
     --secondary-hover: var(--purple-2);
     --secondary-color: var(--white);
@@ -43,7 +48,8 @@
     --alternate-border-hover: var(--black);
 
     --preview-bg: #F9FAFC;
-    --histogram-column: #4263EB; 
+    --histogram-column: #4263EB;
+    --selected-point: #D84910;
 
     --opacity-disabled: 0.5;
 }
@@ -56,4 +62,8 @@
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
 }
