@@ -1,23 +1,27 @@
 .card {
     width: 350px;
     height: 367px;
-    padding-bottom: 32px;
+    padding: 32px 25px;
     background: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+    transition: all 0.5s ease;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
-
-    /* Test Animation */
-    transition: all 0.5s ease;
+    row-gap: 25px;
 }
 
 .card:hover {
-    /* Test Animation */
     transform: translateY(-15px);
+}
+
+.card__content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__titles-wrapper {
@@ -48,29 +52,18 @@
 
 /* ----------------------------------- */
 
-.card__tooltip {
-    margin: 164px auto 0;
-}
-
-.card__calendar {
-    margin-top: 16px;
-    /* margin: 32px 54px 0; */
-    transform: scale(0.8);
-}
-
-.card__histogram {
-    margin: 61px 25px 0;
-}
-
-
-
 @media screen and (max-width:1280px) {}
 
 @media screen and (max-width:768px) {
     .card {
         width: 164px;
         height: 231px;
+        row-gap: 0;
         padding: 0;
+    }
+
+    .card__content-wrapper{
+        padding: 10px;
     }
 
     .card__titles-wrapper {
@@ -89,15 +82,5 @@
     .card__subtitle {
         font-size: 14px;
         line-height: 22px;
-    }
-
-
-    .card__tooltip {
-        margin-top: 82px;
-    }
-
-    .card__histogram {
-        margin: 44px 11px 0;
-        /* margin: 0; */
     }
 }

@@ -4,13 +4,18 @@
     outline: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 16px 24px 24px 24px;
+    width: 100%;
 }
+
+.histogram_preview {
+    /* margin: 0 25px; */
+}
+
 
 .histogram__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
 }
 
 .histogram__header {
@@ -61,7 +66,6 @@
     justify-content: stretch;
     align-items: flex-end;
     height: 50px;
-    /* height: 100%; */
     padding: 0 2px;
     gap: 1px;
 }
@@ -78,12 +82,7 @@
 @media screen and (max-width:1280px) {}
 
 @media screen and (max-width:768px) {
-    /* .histogram {
-        transform: scale(0.5);
-    } */
-
     .histogram {
-        height: 76px;
         padding: 8px 12px 12px 12px;
     }
 
@@ -100,6 +99,7 @@
 
     .histogram__chart {
         padding: 0 1px;
+        height: 25px;
     }
 
     .histogram__title {

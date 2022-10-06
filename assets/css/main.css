@@ -4,18 +4,21 @@
 @import './reset.css';
 
 /* COMPONENTS */
-@import '../../components/header/header.css';
-@import '../../components/preview/preview.css';
-@import '../../components/footer/footer.css';
-@import '../../components/menu/menu.css';
-@import '../../components/element-guide/element-guide.css';
-@import '../../components/card/card.css';
+@import '../../components/macro-components/header/header.css';
+@import '../../components/macro-components/preview/preview.css';
+@import '../../components/macro-components/footer/footer.css';
+@import '../../components/macro-components/menu/menu.css';
+@import '../../components/macro-components/element-guide/element-guide.css';
+@import '../../components/macro-components/card/card.css';
 @import '../../pages/page-template/page-template.css';
 
-@import '../../components/histogram/histogram.css';
-@import '../../components/button/button.css';
-@import '../../components/tooltip/tooltip.css';
-@import '../../components/calendar/calendar.css';
+@import '../../components/micro-components/histogram/histogram.css';
+@import '../../components/micro-components/button/button.css';
+@import '../../components/micro-components/tooltip/tooltip.css';
+@import '../../components/micro-components/calendar/calendar.css';
+@import '../../components/micro-components/modal/modal.css';
+@import '../../components/micro-components/skeleton/skeleton.css';
+@import '../../components/micro-components/accordion/accordion.css';
 
 
 :root {
