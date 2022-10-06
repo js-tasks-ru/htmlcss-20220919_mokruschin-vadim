@@ -16,8 +16,6 @@
 .histogram__header {
     display: flex;
     flex-direction: column;
-    /* чтобы отодвинуть вниз
-    максимально высокий столбец */
     margin-bottom: 10px;
 }
 
@@ -63,6 +61,7 @@
     justify-content: stretch;
     align-items: flex-end;
     height: 50px;
+    /* height: 100%; */
     padding: 0 2px;
     gap: 1px;
 }
@@ -70,9 +69,6 @@
 .histogram__chart-column {
     background: var(--histogram-column);
     flex-grow: 1;
-    /* чтобы при загрузке страницы столбики
-    росли снизу вверх 
-    скрипт задаёт высоту колонок рандомно*/
     height: 0%;
     transition: all 0.75s ease;
 }
@@ -82,12 +78,47 @@
 @media screen and (max-width:1280px) {}
 
 @media screen and (max-width:768px) {
+    /* .histogram {
+        transform: scale(0.5);
+    } */
+
     .histogram {
-        /* width: 145px;
-        height: 76px; */
-        transform: scale(0.75);
+        height: 76px;
+        padding: 8px 12px 12px 12px;
     }
+
+    .histogram__top-title-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 3px;
+    }
+
+    .histogram__header {
+        margin-bottom: 5px;
+    }
+
     .histogram__chart {
-         
+        padding: 0 1px;
+    }
+
+    .histogram__title {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .histogram__view-link {
+        font-size: 8px;
+        line-height: 12px;
+        color: var(--histogram-column);
+        margin-top: 1.5px;
+    }
+
+    .histogram__amount {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 13px;
+        color: var(--black);
     }
 }

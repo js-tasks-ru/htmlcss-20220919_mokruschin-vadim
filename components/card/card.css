@@ -59,7 +59,14 @@
     .card {
         width: 164px;
         height: 231px;
-        padding: 8px;
+        padding: 0;
+    }
+
+    .card__titles-wrapper{
+        height: 66px;
+        border-top: 1px solid #DDE2E5;
+        justify-content: center;
+        gap: 0px;
     }
 
     .card__title {
@@ -69,10 +76,12 @@
     }
 
     .card__subtitle {
-        display: none;
+        font-size: 14px;
+        line-height: 22px;
     }
 
     .card__histogram {
-        /* margin: 44px 11px 0; */
+        margin: 44px 11px 0;
+        /* margin: 0; */
     }
 }
