@@ -43,7 +43,10 @@
         <div class="container">
             <div class="preview__cards-wrapper">
                 <div class="card">
-                    <div></div>
+                    <div class="tooltip card__tooltip">
+                        <div class="tooltip__trigger"></div>
+                        <div class="tooltip__helper">Helper Text</div>
+                    </div>
                     <div class="card__titles-wrapper">
                         <h3 class="card__title">
                             Tooltip
@@ -62,6 +65,59 @@
                 </div>
                 <div class="card">
                     <div></div>
+                    <!-- <div class="calendar card__calendar">
+                        <h5 class="calendar__title">
+                            October 2019
+                        </h5>
+                        <div class="calendar__grid">
+                            <div class="calendar__weekdays-wrapper">
+                                <p class="calendar__weekday-item">Mon</p>
+                                <p class="calendar__weekday-item">Tue</p>
+                                <p class="calendar__weekday-item">Wed</p>
+                                <p class="calendar__weekday-item">Thu</p>
+                                <p class="calendar__weekday-item">Fri</p>
+                                <p class="calendar__weekday-item">Sat</p>
+                                <p class="calendar__weekday-item">Sun</p>
+                            </div>
+                            <div class="calendar__dates-wrapper">
+                                <div class="calendar__date-item"></div>
+                                <div class="calendar__date-item"></div>
+                                <div class="calendar__date-item"></div>
+                                <div class="calendar__date-item"></div>
+                                <div class="calendar__date-item">1</div>
+                                <div class="calendar__date-item">2</div>
+                                <div class="calendar__date-item">3</div>
+                                <div class="calendar__date-item">4</div>
+                                <div class="calendar__date-item">5</div>
+                                <div class="calendar__date-item">6</div>
+                                <div class="calendar__date-item">7</div>
+                                <div class="calendar__date-item">8</div>
+                                <div class="calendar__date-item">9</div>
+                                <div class="calendar__date-item">10</div>
+                                <div class="calendar__date-item">11</div>
+                                <div class="calendar__date-item">12</div>
+                                <div class="calendar__date-item">13</div>
+                                <div class="calendar__date-item">14</div>
+                                <div class="calendar__date-item">15</div>
+                                <div class="calendar__date-item">16</div>
+                                <div class="calendar__date-item">17</div>
+                                <div class="calendar__date-item calendar__date-item_external-selected">18</div>
+                                <div class="calendar__date-item calendar__date-item_inner-selected">19</div>
+                                <div class="calendar__date-item calendar__date-item_inner-selected">20</div>
+                                <div class="calendar__date-item calendar__date-item_inner-selected">21</div>
+                                <div class="calendar__date-item calendar__date-item_inner-selected">22</div>
+                                <div class="calendar__date-item calendar__date-item_external-selected">23</div>
+                                <div class="calendar__date-item">24</div>
+                                <div class="calendar__date-item">25</div>
+                                <div class="calendar__date-item">26</div>
+                                <div class="calendar__date-item">27</div>
+                                <div class="calendar__date-item">28</div>
+                                <div class="calendar__date-item">29</div>
+                                <div class="calendar__date-item">30</div>
+                                <div class="calendar__date-item">31</div>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="card__titles-wrapper">
                         <h3 class="card__title">
                             Calendar
@@ -80,54 +136,54 @@
                 </div>
                 <div class="card">
                     <div class="histogram histogram_preview card__histogram">
-                            <div class="histogram__wrapper">
-                                <div class="histogram__header">
-                                    <div class="histogram__top-title-row">
-                                        <p class="histogram__title">
-                                            Total orders
-                                        </p>
-                                        <p class="histogram__view-link">
-                                            View all
-                                        </p>
-                                    </div>
-                                    <h4 class="histogram__amount">
-                                        50254
-                                    </h4>
+                        <div class="histogram__wrapper">
+                            <div class="histogram__header">
+                                <div class="histogram__top-title-row">
+                                    <p class="histogram__title">
+                                        Total orders
+                                    </p>
+                                    <p class="histogram__view-link">
+                                        View all
+                                    </p>
                                 </div>
-                                <div class="histogram__chart">
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                </div>
+                                <h4 class="histogram__amount">
+                                    50254
+                                </h4>
+                            </div>
+                            <div class="histogram__chart">
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
+                                <div class="histogram__chart-column"></div>
                             </div>
                         </div>
+                    </div>
                     <div></div>
                     <div class="card__titles-wrapper">
                         <h3 class="card__title">

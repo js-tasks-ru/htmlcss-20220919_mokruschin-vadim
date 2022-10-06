@@ -7,12 +7,15 @@
 @import '../../components/header/header.css';
 @import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
-@import '../../components/card/card.css';
-@import '../../components/histogram/histogram.css';
 @import '../../components/menu/menu.css';
 @import '../../components/element-guide/element-guide.css';
-
+@import '../../components/card/card.css';
 @import '../../pages/page-template/page-template.css';
+
+@import '../../components/histogram/histogram.css';
+@import '../../components/button/button.css';
+@import '../../components/tooltip/tooltip.css';
+@import '../../components/calendar/calendar.css';
 
 
 :root {
