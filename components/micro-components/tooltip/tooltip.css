@@ -1,0 +1,49 @@
+.tooltip {
+    position: relative;
+    width: max-content;
+}
+
+.tooltip__trigger {
+    width: 24px;
+    height: 24px;
+    background: url('./help.svg');
+    cursor: pointer;
+}
+
+.tooltip__trigger:hover~.tooltip__helper {
+    visibility: visible; 
+    opacity: 1;
+    /* bottom: calc(100% + 6px + 3px); */
+}
+
+.tooltip__helper {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    padding: 13px 21px 8px;
+    position: absolute;
+    bottom: calc(100% + 6px + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.20s ease;
+    background: var(--histogram-column);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    color: var(--grey-2);
+}
+
+.tooltip__helper:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    border: 7px solid transparent;
+    border-top: 6px solid var(--histogram-column);
+}

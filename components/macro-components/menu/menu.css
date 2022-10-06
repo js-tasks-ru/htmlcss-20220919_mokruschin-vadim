@@ -40,3 +40,13 @@
 .menu__point_selected:hover {
     transform: none;
 }
+
+
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:768px) {
+    .menu {
+        display: none;
+    }
+}

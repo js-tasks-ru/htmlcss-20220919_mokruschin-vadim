@@ -8,10 +8,35 @@
     height: 100%;
 }
 
+.preview-template__main {
+    display: flex;
+    justify-content: center;
+}
+
 .preview-template__wrapper {
     display: grid;
-    grid-template-columns: 229px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-column-gap: 56px;
-    margin-top: 36px;
-    /* height: 100%; */
+}
+
+
+
+@media screen and (max-width:1280px) {
+    .preview-template {
+        padding: 0 25px;
+    }
+
+    .preview-template__wrapper {
+        grid-column-gap: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .preview-template__wrapper {
+        display: block;
+    }
+
+    .preview-template {
+        padding: 0;
+    }
 }

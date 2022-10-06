@@ -1,0 +1,57 @@
+.skeleton {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    /* оutline убрал артефакты с
+    добавлением 2px к высоте скелетона */
+    outline: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 24px 40px 32px 24px;
+}
+
+.skeleton__abstract {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.skeleton__avatar {
+    width: 64px;
+    height: 64px;
+    background: var(--grey-2);
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.skeleton__titles-wrapper {
+    flex-grow: 1;
+}
+
+.skeleton__stripe {
+    height: 20px;
+    margin-bottom: 8px;
+    padding: 0;
+    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__stripe:last-child {
+    margin-bottom: 0;
+}
+
+.skeleton__stripe:last-child {
+    margin-bottom: 0;
+}
+
+.skeleton__stripe_size_sm {
+    width: 39.5%;
+}
+
+.skeleton__stripe_size_md {
+    width: 59%;
+}
+
+.skeleton__stripe_size_lg {
+    /* width: 100%; */
+}
