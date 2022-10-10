@@ -6,8 +6,13 @@
 .tooltip__trigger {
     width: 24px;
     height: 24px;
-    background: url('./help.svg');
     cursor: pointer;
+    color: #212429;
+    transition: all .35s ease;
+}
+
+.tooltip__trigger:hover{
+    color: #4b4f56;
 }
 
 .tooltip__trigger:hover~.tooltip__helper {
@@ -38,12 +43,17 @@
     color: var(--grey-2);
 }
 
+.tooltip__helper_preview {
+    visibility: visible;
+    opacity: 1;
+}
+
 .tooltip__helper:after {
     position: absolute;
-    top: 100%;
+    top: calc(100% - 1px);
     left: 50%;
     transform: translateX(-50%);
     content: '';
     border: 7px solid transparent;
-    border-top: 6px solid var(--histogram-column);
+    border-top: 7px solid var(--histogram-column);
 }

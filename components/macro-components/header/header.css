@@ -34,13 +34,15 @@
 }
 
 
+
 .header__logo {
-    background: url('./logo.svg');
     width: 110px;
     height: 32px;
 }
 
-
+.header__logo:hover {
+    cursor: pointer;
+}
 
 .header__right-side-wrapper {
     display: flex;
@@ -166,7 +168,7 @@
     .header__bottom-nav-wrapper {
         flex-wrap: nowrap;
         white-space: nowrap;
-        overflow-x: auto    ;
+        overflow-x: auto;
         overflow-y: hidden;
     }
 

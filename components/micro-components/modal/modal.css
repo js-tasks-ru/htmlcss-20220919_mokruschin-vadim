@@ -45,11 +45,13 @@
 .modal__close-cross {
     height: 16px;
     width: 16px;
-    background: url(./cross.svg) center no-repeat;
+    color: #495057;
+    transition: color .35s ease;
 }
 
 .modal__close-cross:hover {
     cursor: pointer;
+    color: #18191a;
 }
 
 .modal__body {

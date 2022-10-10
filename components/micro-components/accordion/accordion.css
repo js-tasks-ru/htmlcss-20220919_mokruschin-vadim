@@ -43,8 +43,11 @@
 }
 
 .accordion__arrow {
-    background: url('./Vector.svg');
     width: 18px;
     height: 10px;
     transform: rotate(180deg);
+}
+
+.accordion__arrow:hover {
+    cursor: pointer;
 }
