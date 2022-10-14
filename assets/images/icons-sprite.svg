@@ -12,6 +12,9 @@
         <symbol id='arrow'>
             <path d="M17 9L9 1L1 9" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill='none'/>
         </symbol>
+        <symbol id='check-mark'>
+            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill='none'/>
+        </symbol>
         <symbol id='logo'>
             <g clip-path="url(#clip0_16746_155)">
                 <rect y="1" width="30" height="30" fill="#212429"/>
