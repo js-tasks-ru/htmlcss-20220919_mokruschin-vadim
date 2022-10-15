@@ -8,15 +8,15 @@
 </head>
 
 <body style="display: flex; justify-content: center;">
-    <div class="container" style="padding-top: 100px;">
-        <div class="div" style="display: flex; flex-direction:column; gap: 30px">
-            <div class="input-group">
-                <label class="input-group__title">Label</label>
+    <div class="container" style="padding-top: 50px;">
+        <div class="div" style="display: flex; flex-direction:column; gap: 30px; width: 325px;">
+            <label class="input-group">
+                <p class="input-group__title">Label</p>
                 <div class="input-group__input-field">
                     <input type="text" class="input-group__input" placeholder="Placeholder">
                     <div class="input-group__state-icon"></div>
                 </div>
-            </div>
+            </label>
             <label class="input-group input-group_success">
                 <p class="input-group__title">Success</p>
                 <div class="input-group__input-field">
@@ -24,10 +24,47 @@
                     <div class="input-group__state-icon"></div>
                 </div>
             </label>
-            <label class="input-group input-group_error">
+            <label class="input-group input-group_invalid">
                 <p class="input-group__title">Error</p>
                 <div class="input-group__input-field">
                     <input type="text" class="input-group__input" value="Error">
+                    <div class="input-group__state-icon"></div>
+                </div>
+            </label>
+            <label class="input-group">
+                <p class="input-group__title">Disabled</p>
+                <div class="input-group__input-field">
+                    <input type="text" class="input-group__input" value="Disabled" disabled>
+                    <div class="input-group__state-icon"></div>
+                </div>
+            </label>
+        </div>
+        <div class="div" style="display: flex; flex-direction:column; gap: 30px; margin: 60px 0;">
+            <label class="input-group">
+                <p class="input-group__title">Label</p>
+                <div class="input-group__input-field">
+                    <input type="text" class="input-group__input" placeholder="Placeholder">
+                    <div class="input-group__state-icon"></div>
+                </div>
+            </label>
+            <label class="input-group input-group_success">
+                <p class="input-group__title">Success</p>
+                <div class="input-group__input-field">
+                    <input type="text" class="input-group__input" value="Success">
+                    <div class="input-group__state-icon"></div>
+                </div>
+            </label>
+            <label class="input-group input-group_invalid">
+                <p class="input-group__title">Error</p>
+                <div class="input-group__input-field">
+                    <input type="text" class="input-group__input" value="Error">
+                    <div class="input-group__state-icon"></div>
+                </div>
+            </label>
+            <label class="input-group">
+                <p class="input-group__title">Disabled</p>
+                <div class="input-group__input-field">
+                    <input type="text" class="input-group__input" value="Disabled" disabled>
                     <div class="input-group__state-icon"></div>
                 </div>
             </label>
