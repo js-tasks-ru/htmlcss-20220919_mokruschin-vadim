@@ -11,7 +11,6 @@
 .input-group_invalid .input-group__input {
     outline: 1px solid var(--red);
     box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);
-    border-radius: 8px;
 }
 
 .input-group_invalid .input-group__state-icon {
@@ -35,10 +34,9 @@
 
 .input-group__input {
     width: 100%;
-    padding: 18px 60px 18px 24px;
+    padding: 17px 60px 13px 24px;
     background: var(--white);
-    border: none;
-    outline: 1px solid var(--grey-2);
+    border: 1px solid var(--grey-2);
     border-radius: 8px;
     box-sizing: border-box;
 
@@ -58,12 +56,6 @@
 .input-group:not(.input-group_invalid) .input-group__input:focus {
     outline: 1px solid var(--blue-3);
     box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
-}
-
-.input-group:focus .input-group__input-field {
-    border: 1px solid var(--blue-3);
-    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
-    border-radius: 8px;
 }
 
 .input-group__state-icon {
