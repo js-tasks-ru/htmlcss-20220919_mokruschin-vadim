@@ -1,59 +1,59 @@
 /* ==================== COMMON ========================== */
 
 .button {
-    padding: 15px 30px 14px;
-    border: none;
-    border-radius: 8px;
-    height: 48px;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    transition: background .25s ease, border .25s ease, box-shadow .1s ease;
+  padding: 15px 30px 14px;
+  border: none;
+  border-radius: 8px;
+  height: 48px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  transition: background .25s ease, border .25s ease, box-shadow .1s ease;
 }
 
 .button:hover:enabled {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .button:disabled {
-    opacity: var(--opacity-disabled);
-    pointer-events: none;
+  opacity: var(--opacity-disabled);
+  pointer-events: none;
 }
 
 /* ==================== PRIMARY ========================== */
 
 .button_primary {
-    background: var(--primary);
-    color: var(--primary-color);
+  background: var(--primary);
+  color: var(--primary-color);
 }
 
 .button_primary:hover:enabled,
 .button_primary:active:enabled {
-    background: var(--primary-hover);
+  background: var(--primary-hover);
 }
 
 /* ==================== SECONDARY ========================== */
 
 .button_secondary {
-    background: var(--secondary);
-    color: var(--secondary-color);
+  background: var(--secondary);
+  color: var(--secondary-color);
 }
 
 .button_secondary:hover:enabled,
 .button_secondary:active:enabled {
-    background: var(--secondary-hover);
+  background: var(--secondary-hover);
 }
 
 /* ==================== ALTERNATE ========================== */
 
 .button_alternate {
-    background: var(--bg-alternate);
-    border: 1px solid var(--alternate-border);
-    color: var(--alternate-color);
+  background: var(--bg-alternate);
+  border: 1px solid var(--alternate-border);
+  color: var(--alternate-color);
 }
 
 .button_alternate:hover:enabled,
 .button_alternate:active:enabled {
-    border: 1px solid var(--alternate-border-hover);
+  border: 1px solid var(--alternate-border-hover);
 }

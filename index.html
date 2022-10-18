@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <title>Reusable component library</title>
-    <link rel="shortcut icon" href="assets/images/html_ico.png">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <script type="module" src="./assets/scripts/histogram.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__top-wrapper">
-                    <svg class="header__logo">
-                        <use href="./assets/images/icons-sprite.svg#logo"></use>
-                    </svg>
-                    <div class="header__right-side-wrapper">
-                        <div class="header__top-nav-wrapper">
-                            <a href="#" class="header__nav-link header__nav-link_selected">Components</a>
-                            <a href="#" class="header__nav-link">About</a>
-                            <a href="#" class="header__nav-link">Contact</a>
-                        </div>
-                        <div class="header__icons-wrapper">
-                            <div class="header__icon-sun"></div>
-                            <div class="header__icon-toggle"></div>
-                            <div class="header__icon-moon"></div>
+    <head>
+        <title>Reusable component library</title>
+        <link rel="shortcut icon" href="assets/images/html_ico.png">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <script type="module" src="./assets/scripts/histogram.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__top-wrapper">
+                        <svg class="header__logo">
+                            <use href="/assets/images/icons-sprite.svg#logo"></use>
+                        </svg>
+                        <div class="header__right-side-wrapper">
+                            <div class="header__top-nav-wrapper">
+                                <a href="#" class="header__nav-link header__nav-link_selected">Components</a>
+                                <a href="#" class="header__nav-link">About</a>
+                                <a href="#" class="header__nav-link">Contact</a>
+                            </div>
+                            <div class="header__icons-wrapper">
+                                <div class="header__icon-sun"></div>
+                                <div class="header__icon-toggle"></div>
+                                <div class="header__icon-moon"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <h1 class="header__title">Reusable component library</h1>
-                <div class="header__bottom-nav-wrapper">
-                    <a href="#" class="header__nav-link header__bottom-nav-link_selected">All components</a>
-                    <a href="#" class="header__nav-link">Elements</a>
-                    <a href="#" class="header__nav-link">Containers</a>
-                    <a href="#" class="header__nav-link">Templates</a>
+                    <h1 class="header__title">Reusable component library</h1>
+                    <div class="header__bottom-nav-wrapper">
+                        <a href="#" class="header__nav-link header__bottom-nav-link_selected">All components</a>
+                        <a href="#" class="header__nav-link">Elements</a>
+                        <a href="#" class="header__nav-link">Containers</a>
+                        <a href="#" class="header__nav-link">Templates</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="preview">
-        <div class="container">
-            <div class="preview__cards-wrapper">
-                <div class="card">
-                    <div class="card__content-wrapper">
-                        <div class="tooltip">
-                            <svg class="tooltip__trigger">
-                                <use href="./assets/images/icons-sprite.svg#question"></use>
-                            </svg>
-                            <div class="tooltip__helper tooltip__helper_preview">Helper Text</div>
+        </header>
+        <section class="preview">
+            <div class="container">
+                <div class="preview__cards-wrapper">
+                    <div class="card">
+                        <div class="card__content-wrapper">
+                            <div class="tooltip">
+                                <svg class="tooltip__trigger">
+                                    <use href="./assets/images/icons-sprite.svg#question"></use>
+                                </svg>
+                                <div class="tooltip__helper tooltip__helper_preview">Helper Text</div>
+                            </div>
+                        </div>
+                        <div class="card__titles-wrapper">
+                            <h3 class="card__title">
+                                Tooltip
+                            </h3>
+                            <p class="card__subtitle">Container</p>
                         </div>
                     </div>
-                    <div class="card__titles-wrapper">
-                        <h3 class="card__title">
-                            Tooltip
-                        </h3>
-                        <p class="card__subtitle">Container</p>
+                    <div class="card">
+                        <div class="card__content-wrapper"></div>
+                        <div class="card__titles-wrapper">
+                            <h3 class="card__title">
+                                Form elements
+                            </h3>
+                            <p class="card__subtitle">Element</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card__content-wrapper"></div>
-                    <div class="card__titles-wrapper">
-                        <h3 class="card__title">
-                            Form elements
-                        </h3>
-                        <p class="card__subtitle">Element</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__content-wrapper"></div>
-                    <!-- <div class="calendar card__calendar">
+                    <div class="card">
+                        <div class="card__content-wrapper"></div>
+                        <!-- <div class="calendar card__calendar">
                         <h5 class="calendar__title">
                             October 2019
                         </h5>
@@ -124,111 +121,110 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="card__titles-wrapper">
-                        <h3 class="card__title">
-                            Calendar
-                        </h3>
-                        <p class="card__subtitle">Container</p>
+                        <div class="card__titles-wrapper">
+                            <h3 class="card__title">
+                                Calendar
+                            </h3>
+                            <p class="card__subtitle">Container</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card__content-wrapper"></div>
-                    <div class="card__titles-wrapper">
-                        <h3 class="card__title">
-                            Modal dialog
-                        </h3>
-                        <p class="card__subtitle">Container</p>
+                    <div class="card">
+                        <div class="card__content-wrapper"></div>
+                        <div class="card__titles-wrapper">
+                            <h3 class="card__title">
+                                Modal dialog
+                            </h3>
+                            <p class="card__subtitle">Container</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card__content-wrapper">
-                        <div class="histogram histogram_preview">
-                            <div class="histogram__wrapper">
-                                <div class="histogram__header">
-                                    <div class="histogram__top-title-row">
-                                        <p class="histogram__title">
-                                            Total orders
-                                        </p>
-                                        <p class="histogram__view-link">
-                                            View all
-                                        </p>
+                    <div class="card">
+                        <div class="card__content-wrapper">
+                            <div class="histogram histogram_preview">
+                                <div class="histogram__wrapper">
+                                    <div class="histogram__header">
+                                        <div class="histogram__top-title-row">
+                                            <p class="histogram__title">
+                                                Total orders
+                                            </p>
+                                            <p class="histogram__view-link">
+                                                View all
+                                            </p>
+                                        </div>
+                                        <h4 class="histogram__amount">
+                                            50254
+                                        </h4>
                                     </div>
-                                    <h4 class="histogram__amount">
-                                        50254
-                                    </h4>
-                                </div>
-                                <div class="histogram__chart">
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
-                                    <div class="histogram__chart-column"></div>
+                                    <div class="histogram__chart">
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                        <div class="histogram__chart-column"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="card__titles-wrapper">
+                            <h3 class="card__title">
+                                Histogram
+                            </h3>
+                            <p class="card__subtitle">Element</p>
+                        </div>
                     </div>
-                    <div class="card__titles-wrapper">
-                        <h3 class="card__title">
-                            Histogram
-                        </h3>
-                        <p class="card__subtitle">Element</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__content-wrapper"></div>
-                    <div class="card__titles-wrapper">
-                        <h3 class="card__title">
-                            Avatar
-                        </h3>
-                        <p class="card__subtitle">Element</p>
+                    <div class="card">
+                        <div class="card__content-wrapper"></div>
+                        <div class="card__titles-wrapper">
+                            <h3 class="card__title">
+                                Avatar
+                            </h3>
+                            <p class="card__subtitle">Element</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <h2 class="footer__title">
-                    About
-                </h2>
-                <p class="footer__text">
-                    This project is a collection of professionally designed, pre-built, fully responsive HTML
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <h2 class="footer__title">
+                        About
+                    </h2>
+                    <p class="footer__text">
+                        This project is a collection of professionally designed, pre-built, fully responsive HTML
                     snippets
                     you
                     can drop into your projects. Get started by checking out our free preview components, or
                     browsing
                     the
                     PNG previews in the categories you're most curious about.
-                </p>
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>

@@ -1,52 +1,44 @@
 .menu {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter';
+  font-style: normal;
 }
 
 .menu__header {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--black-2);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black-2);
 }
 
 .menu__main-section {
-    margin-top: 16px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .menu__point {
-    text-decoration: none;
-    width: max-content;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 26px;
-    color: var(--black-2);
-    cursor: pointer;
-    transition: all 0.25s ease;
+  text-decoration: none;
+  width: max-content;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--black-2);
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
 .menu__point:hover {
-    transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .menu__point_selected {
-    color: var(--selected-point);
+  color: var(--selected-point);
 }
 
 .menu__point_selected:hover {
-    transform: none;
-}
-
-
-
-@media screen and (max-width:1280px) {}
-
-@media screen and (max-width:768px) {
-    .menu {
-        display: none;
-    }
+  transform: none;
 }

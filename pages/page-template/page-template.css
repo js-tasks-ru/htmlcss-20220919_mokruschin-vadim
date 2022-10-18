@@ -39,4 +39,8 @@
     .preview-template {
         padding: 0;
     }
+
+    .preview-template__menu{
+      display: none;
+    }
 }
