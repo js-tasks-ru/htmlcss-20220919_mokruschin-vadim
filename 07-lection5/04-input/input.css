@@ -54,7 +54,7 @@
 
 .toggler__input:checked~.toggler__state .toggler__control {
     background: var(--histogram-column);
-    border: none;
+    border-color:  var(--histogram-column);
     justify-content: flex-end;
 }
 
