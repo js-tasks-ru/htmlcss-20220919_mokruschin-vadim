@@ -60,6 +60,8 @@
   margin: 16px 4px 24px;
   border-top: 1px solid var(--grey-2);
   border-bottom: 1px solid var(--grey-2);
+  display: flex;
+  justify-content: space-between;
 }
 
 .burger-menu__menu {
