@@ -20,9 +20,14 @@
   gap: 15px;
 }
 
-.toggler__state-icon {
+.toggler__icon-sun {
   height: 24px;
   width: 24px;
+}
+
+.toggler__icon-moon {
+  height: 20px;
+  width: 20px;
 }
 
 .toggler__control {

@@ -65,11 +65,20 @@
                                 <a href="#" class="header__nav-link">About</a>
                                 <a href="#" class="header__nav-link">Contact</a>
                             </div>
-                            <div class="header__icons-wrapper">
-                                <div class="header__icon-sun"></div>
-                                <div class="header__icon-toggle"></div>
-                                <div class="header__icon-moon"></div>
-                            </div>
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input" id="theme-changer">
+                                <div class="toggler__state toggler__state_theme-switcher">
+                                    <svg class="toggler__icon-sun">
+                                        <use href="/assets/images/icons-sprite.svg#sun"></use>
+                                    </svg>
+                                    <div class="toggler__control">
+                                        <div class="toggler__icon"></div>
+                                    </div>
+                                    <svg class="toggler__icon-moon">
+                                        <use href="/assets/images/icons-sprite.svg#moon"></use>
+                                    </svg>
+                                </div>
+                            </label>
                         </div>
                     </div>
                     <h1 class="header__title">Reusable component library</h1>
