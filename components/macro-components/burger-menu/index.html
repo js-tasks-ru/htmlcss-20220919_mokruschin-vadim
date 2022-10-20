@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Страница бургер-меню -->
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="./burger-menu.css">
+        <script defer src="./burger-menu.js"></script>
+    </head>
+    <body>
+        <div id="burger-menu-open">
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M3 12H21"
+                    stroke="#495057"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M3 6H21"
+                    stroke="#495057"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M3 18H21"
+                    stroke="#495057"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-menu__header">
+                <div class="burger-menu__button-close" id="burger-menu-close">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M18 6L6 18"
+                            stroke="#212429"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M6 6L18 18"
+                            stroke="#212429"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <svg class="burger-menu__header-logo">
+                    <use href="/assets/images/icons-sprite.svg#logo"></use>
+                </svg>
+            </div>
+            <div class="burger-menu__theme-section">
+                <p class="burger-menu__theme-section-text">Dark</p>
+            </div>
+            <div class="menu burger-menu__menu">
+                <h4 class="menu__header">
+                    Components
+                </h4>
+                <div class="menu__main-section">
+                    <a href="#" class="menu__point">
+                        Modal
+                    </a>
+                    <a href="#" class="menu__point">
+                        Tooltip
+                    </a>
+                    <a href="#" class="menu__point">
+                        Avatar
+                    </a>
+                    <a href="#" class="menu__point">
+                        Calendar
+                    </a>
+                    <a href="#" class="menu__point menu__point_selected">
+                        Histogram
+                    </a>
+                    <a href="#" class="menu__point">
+                        Custom form elements
+                    </a>
+                </div>
+                <a href="#" class="menu__point">
+                    Main page
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

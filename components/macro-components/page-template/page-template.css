@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto 1fr auto;
-    background: var(--preview-bg);
-    height: 100%;
+    background: var(--primary-background-color);
+    min-height: 100vh;
 }
 
 .preview-template__main {
