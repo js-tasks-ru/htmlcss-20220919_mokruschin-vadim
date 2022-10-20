@@ -1,5 +1,4 @@
 .burger-menu {
-  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -66,11 +65,4 @@
 
 .burger-menu__menu {
   margin: 0 4px;
-}
-
-@media screen and (max-width: 768px) {
-  .burger-menu {
-    display: block;
-    transform: translateX(-100vw);
-  }
 }
