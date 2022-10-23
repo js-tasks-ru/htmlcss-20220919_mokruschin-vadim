@@ -7,7 +7,7 @@
   padding: 0 12px 0;
   transform: translateX(-100vw);
   transition: transform .25s ease;
-  background: #F9FAFC;
+  background: var(--primary-background-color);
   z-index: 5;
 }
 
@@ -42,6 +42,7 @@
   width: 110px;
   height: 32px;
   margin: 0 auto;
+  fill: var(--logo-color);
 }
 
 .burger-menu__theme-section-text {
@@ -50,7 +51,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--primary-text-color);
 }
 
 

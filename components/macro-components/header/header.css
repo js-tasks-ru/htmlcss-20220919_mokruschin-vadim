@@ -16,8 +16,12 @@
   font-weight: 500;
   font-size: 50px;
   line-height: 64px;
+  color: var(--primary-text-color);
 }
 
+.header_size_small .header__logo  {
+  /* fill: var(--black);   */
+}
 
 
 .header__wrapper {
@@ -39,6 +43,7 @@
 .header__logo {
   width: 110px;
   height: 32px;
+  fill: var(--logo-color);  
 }
 
 .header__burger-icon {
@@ -73,12 +78,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #ACB5BD;
+  color: var(--header-nav-link-color);
   text-decoration: none;
 }
 
 .header__nav-link_selected {
-  color: var(--black);
+  color: var(--selected-header-nav-link-color);
 }
 
 
@@ -120,7 +125,7 @@
 }
 
 .header__bottom-nav-link_selected {
-  color: var(--black);
+  color: var(--selected-header-nav-link-color);
   position: relative;
 }
 
@@ -131,7 +136,7 @@
   left: 0;
   width: 100%;
   height: 5px;
-  background: var(--black);
+  background: var(--header-nav-link-color);
 }
 
 /* ------------------------------------------------------ */
@@ -169,7 +174,6 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
-    color: var(--grey-4);
   }
 
   .header__top-wrapper {

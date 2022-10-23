@@ -1,16 +1,11 @@
 .histogram {
     box-sizing: border-box;
-    background: var(white);
+    background: transparent;
     outline: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 16px 24px 24px 24px;
     width: 100%;
 }
-
-.histogram_preview {
-    /* margin: 0 25px; */
-}
-
 
 .histogram__wrapper {
     display: flex;
@@ -37,7 +32,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: var(--black);
+    color: var(--primary-text-color);
     opacity: 0.8;
 }
 
@@ -49,6 +44,7 @@
     line-height: 24px;
     color: var(--histogram-column);
     margin-top: 3px;
+    cursor: pointer;
 }
 
 .histogram__amount {
@@ -57,7 +53,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: var(--black);
+    color: var(--primary-text-color);
 }
 
 .histogram__chart {
@@ -119,6 +115,5 @@
         font-weight: 400;
         font-size: 10px;
         line-height: 13px;
-        color: var(--black);
     }
 }

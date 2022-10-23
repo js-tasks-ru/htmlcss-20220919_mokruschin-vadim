@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" theme-mode="light">
     <head>
         <title>Reusable component library</title>
         <link rel="shortcut icon" href="assets/images/html_ico.png">
         <link rel="stylesheet" href="./assets/css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="/assets/scripts/histogram.js"></script>
+        <script defer src="/assets/scripts/theme-changer.js"></script>
         <script defer src="/assets/scripts/modal.js"></script>
         <script defer src="/assets/scripts/burger-menu.js"></script>
     </head>
@@ -22,7 +23,7 @@
             <div class="burger-menu__theme-section">
                 <p class="burger-menu__theme-section-text">Dark</p>
                 <label class="toggler">
-                    <input type="checkbox" class="toggler__input" id="theme-changer">
+                    <input type="checkbox" class="toggler__input theme-changer">
                     <div class="toggler__state toggler__state_theme-switcher">
                         <svg class="toggler__icon-sun">
                             <use href="/assets/images/icons-sprite.svg#sun"></use>
@@ -53,14 +54,14 @@
                     <a href="#" class="menu__point">
                         Calendar
                     </a>
-                    <a href="#" class="menu__point menu__point_selected">
+                    <a href="#" class="menu__point">
                         Histogram
                     </a>
                     <a href="#" class="menu__point">
                         Custom form elements
                     </a>
                 </div>
-                <a href="#" class="menu__point">
+                <a href="#" class="menu__point menu__point_selected">
                     Main page
                 </a>
             </div>
@@ -80,7 +81,7 @@
                                 <a href="#" class="header__nav-link">Contact</a>
                             </div>
                             <label class="toggler">
-                                <input type="checkbox" class="toggler__input" id="theme-changer">
+                                <input type="checkbox" class="toggler__input theme-changer">
                                 <div class="toggler__state toggler__state_theme-switcher">
                                     <svg class="toggler__icon-sun">
                                         <use href="/assets/images/icons-sprite.svg#sun"></use>
@@ -125,7 +126,38 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card__content-wrapper"></div>
+                        <div class="card__content-wrapper">
+                            <div class="card__content-wrapper-inputs">
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" checked>
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__icon"></div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input" checked>
+                                    <div class="toggler__state">
+                                        <div class="toggler__control">
+                                            <div class="toggler__icon"></div>
+                                        </div>
+                                        <p class="toggler__title">Toggler</p>
+                                    </div>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" checked>
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="checkbox__icon">
+                                                <use href="/assets/images/icons-sprite.svg#check-mark"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="checkbox__title" for="click">Checked</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
                         <div class="card__titles-wrapper">
                             <h3 class="card__title">
                                 Form elements
@@ -280,7 +312,7 @@
                             <p class="card__subtitle">Element</p>
                         </div>
                     </a>
-                    <div class="card">
+                    <a class="card">
                         <div class="card__content-wrapper">
                             <div class="avatar">
                                 <img class="avatar__img" src="/assets/images/avatar-200.jpg" alt="avatar">
@@ -292,7 +324,28 @@
                             </h3>
                             <p class="card__subtitle">Element</p>
                         </div>
-                    </div>
+                    </a>
+                    <a class="card">
+                        <div class="card__content-wrapper">
+                            <div class="skeleton">
+                                <div class="skeleton__abstract">
+                                    <div class="skeleton__avatar"></div>
+                                    <div class="skeleton__titles-wrapper">
+                                        <div class="skeleton__stripe skeleton__stripe_size_sm"></div>
+                                        <div class="skeleton__stripe skeleton__stripe_size_md"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton__stripe skeleton__stripe_size_lg"></div>
+                                <div class="skeleton__stripe skeleton__stripe_size_lg"></div>
+                            </div>
+                        </div>
+                        <div class="card__titles-wrapper">
+                            <h3 class="card__title">
+                                Avatar
+                            </h3>
+                            <p class="card__subtitle">Element</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>

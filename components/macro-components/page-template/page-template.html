@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" theme-mode="light">
     <head>
         <title>Reusable component library</title>
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="shortcut icon" href="/assets/images/html_ico.png">
         <script defer src="/assets/scripts/burger-menu.js"></script>
+        <script defer src="/assets/scripts/theme-changer.js"></script>
+        <script defer src="/assets/scripts/localStorage.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -20,7 +22,7 @@
             <div class="burger-menu__theme-section">
                 <p class="burger-menu__theme-section-text">Dark</p>
                 <label class="toggler">
-                    <input type="checkbox" class="toggler__input" id="theme-changer">
+                    <input type="checkbox" class="toggler__input theme-changer">
                     <div class="toggler__state toggler__state_theme-switcher">
                         <svg class="toggler__icon-sun">
                             <use href="/assets/images/icons-sprite.svg#sun"></use>
@@ -78,7 +80,7 @@
                                 <a href="#" class="header__nav-link">Contact</a>
                             </div>
                             <label class="toggler">
-                                <input type="checkbox" class="toggler__input" id="theme-changer">
+                                <input type="checkbox" class="toggler__input theme-changer">
                                 <div class="toggler__state toggler__state_theme-switcher">
                                     <svg class="toggler__icon-sun">
                                         <use href="/assets/images/icons-sprite.svg#sun"></use>
@@ -128,7 +130,115 @@
                         </div>
                         <div class="element-guide">
                             <h3 class="element-guide__title">Element Name</h3>
-                            <div class="element-guide__body"></div>
+                            <div class="element-guide__body">
+                                <div class="tabs">
+                                    <input
+                                        class="tabs__input tabs__input_HTML"
+                                        id="input-html"
+                                        name="input-tabs"
+                                        type="radio"
+                                        checked
+                                    >
+                                    <label class="tabs__label tabs__label_HTML" for="input-html">HTML</label>
+                                    <input
+                                        class="tabs__input tabs__input_CSS"
+                                        name="input-tabs"
+                                        type="radio"
+                                        id="input-CSS"
+                                    >
+                                    <label class="tabs__label tabs__label_CSS" for="input-CSS">CSS</label>
+                                    <div class="tabs__code-content tabs__code-content_HTML">
+                                        <pre>
+                                            <code>
+&lt;label class=&quot;radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;radio__input&quot;&gt;
+    &lt;div class=&quot;radio__state&quot;&gt;
+        &lt;div class=&quot;radio__control&quot;&gt;
+            &lt;div class=&quot;radio__icon&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;radio__title&quot;&gt;Default&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/label&gt;
+                                            </code>
+                                        </pre>
+                                    </div>
+                                    <div class="tabs__code-content tabs__code-content_CSS">
+                                      <pre>
+                                        <code>
+.radio {
+    position: relative;
+    width: max-content;
+}
+
+.radio__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.radio__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.radio__control {
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    border-radius: 50%;
+    background: var(--white);
+    display: grid;
+    place-items: center;
+}
+
+.radio__icon {
+    display: none;
+    width: 18px;
+    height: 18px;
+    /* Blue */
+    background: #4263EB;
+    border-radius: 50%;
+}
+
+.radio__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    position: relative;
+    user-select: none;
+}
+
+.radio__input:focus~.radio__state .radio__title {
+    text-decoration: underline;
+}
+
+.radio__input:checked~.radio__state .radio__icon {
+    display: block;
+}
+
+.radio__input:checked~.radio__state .radio__control {
+    border: 2px solid #4263EB;
+}
+
+
+.radio__input:disabled~.radio__state .radio__control {
+    background: var(--grey-2);
+}
+
+.radio__input:disabled~.radio__state .radio__title {
+    color: var(--grey-2);
+}
+                                        </code>
+                                      </pre>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
