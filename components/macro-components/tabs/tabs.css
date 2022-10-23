@@ -44,17 +44,17 @@
   display: none;
 }
 
-.tabs__input_HTML:checked~.tabs__label_HTML,
-.tabs__input_CSS:checked~.tabs__label_CSS {
+#tabs-input-1:checked~#tabs-label-1,
+#tabs-input-2:checked~#tabs-label-2 {
   color: var(--selected-header-nav-link-color);
 }
 
-.tabs__input_HTML:checked~.tabs__label_HTML:after,
-.tabs__input_CSS:checked~.tabs__label_CSS:after {
+#tabs-input-1:checked~#tabs-label-1:after,
+#tabs-input-2:checked~#tabs-label-2:after {
   opacity: 1;
 }
 
-.tabs__input_HTML:checked~.tabs__code-content_HTML,
-.tabs__input_CSS:checked~.tabs__code-content_CSS {
+#tabs-input-1:checked~#tabs-content-1,
+#tabs-input-2:checked~#tabs-content-2 {
   display: block;
 }

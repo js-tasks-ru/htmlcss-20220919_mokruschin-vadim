@@ -15,12 +15,14 @@
                 <div class="burger-menu__button-close" id="burger-menu-close">
                     <div class="burger-menu__icon-cross"></div>
                 </div>
-                <svg class="burger-menu__header-logo">
-                    <use href="/assets/images/icons-sprite.svg#logo"></use>
-                </svg>
+                <a href="/index.html" class="burger-menu__logo-link">
+                    <svg class="burger-menu__header-logo">
+                        <use href="/assets/images/icons-sprite.svg#logo"></use>
+                    </svg>
+                </a>
             </div>
             <div class="burger-menu__theme-section">
-                <p class="burger-menu__theme-section-text">Dark</p>
+                <p class="burger-menu__theme-section-text">Light</p>
                 <label class="toggler">
                     <input type="checkbox" class="toggler__input theme-changer">
                     <div class="toggler__state toggler__state_theme-switcher">
@@ -66,13 +68,17 @@
             </div>
         </div>
         <div class="preview-template">
-            <div class="header header_size_small">
+            <header class="header header_size_small">
                 <div class="container">
                     <div class="header__top-wrapper">
-                        <div class="header__burger-icon" id="burger-menu-open"></div>
-                        <svg class="header__logo">
-                            <use href="/assets/images/icons-sprite.svg#logo"></use>
+                        <svg class="header__burger-icon" id="burger-menu-open">
+                            <use href="/assets/images/icons-sprite.svg#burger-open"></use>
                         </svg>
+                        <a href="/index.html">
+                            <svg class="header__logo">
+                                <use href="/assets/images/icons-sprite.svg#logo"></use>
+                            </svg>
+                        </a>
                         <div class="header__right-side-wrapper">
                             <div class="header__top-nav-wrapper">
                                 <a href="#" class="header__nav-link header__nav-link_selected">Components</a>
@@ -96,8 +102,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="preview-template__main">
+            </header>
+            <main class="preview-template__main">
                 <div class="container container_mod">
                     <div class="preview-template__wrapper">
                         <div class="menu preview-template__menu">
@@ -133,21 +139,21 @@
                             <div class="element-guide__body">
                                 <div class="tabs">
                                     <input
-                                        class="tabs__input tabs__input_HTML"
-                                        id="input-html"
+                                        class="tabs__input"
+                                        id="tabs-input-1"
                                         name="input-tabs"
                                         type="radio"
                                         checked
                                     >
-                                    <label class="tabs__label tabs__label_HTML" for="input-html">HTML</label>
+                                    <label class="tabs__label" id="tabs-label-1" for="tabs-input-1">HTML</label>
                                     <input
-                                        class="tabs__input tabs__input_CSS"
+                                        class="tabs__input"
+                                        id="tabs-input-2"
                                         name="input-tabs"
                                         type="radio"
-                                        id="input-CSS"
                                     >
-                                    <label class="tabs__label tabs__label_CSS" for="input-CSS">CSS</label>
-                                    <div class="tabs__code-content tabs__code-content_HTML">
+                                    <label class="tabs__label" id="tabs-label-2" for="tabs-input-2">CSS</label>
+                                    <div class="tabs__code-content" id="tabs-content-1">
                                         <pre>
                                             <code>
 &lt;label class=&quot;radio&quot;&gt;
@@ -162,9 +168,9 @@
                                             </code>
                                         </pre>
                                     </div>
-                                    <div class="tabs__code-content tabs__code-content_CSS">
-                                      <pre>
-                                        <code>
+                                    <div class="tabs__code-content" id="tabs-content-2">
+                                        <pre>
+                                            <code>
 .radio {
     position: relative;
     width: max-content;
@@ -234,18 +240,18 @@
 .radio__input:disabled~.radio__state .radio__title {
     color: var(--grey-2);
 }
-                                        </code>
-                                      </pre>
+                                            </code>
+                                        </pre>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer footer_preview-template">
+            </main>
+            <footer class="footer footer_preview-template">
                 <p class="footer__text footer__text_preview-template">Reusable component library</p>
-            </div>
+            </footer>
         </div>
     </body>
 </html>

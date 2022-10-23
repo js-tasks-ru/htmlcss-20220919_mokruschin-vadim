@@ -1,39 +1,24 @@
 const themeChangers = document.querySelectorAll('.theme-changer');
 const html = document.querySelector('html');
-
-console.log(themeChangers.length);
+const themeBurgerTextIndicator = document.querySelector(
+  '.burger-menu__theme-section-text ',
+);
 
 themeChangers.forEach((val, ind) =>
   val.addEventListener('change', function () {
-    html.setAttribute(
-      'theme-mode',
-      themeChangers[ind].checked ? 'dark' : 'light',
-    );
+    html.setAttribute('theme-mode', val.checked ? 'dark' : 'light');
+    themeBurgerTextIndicator.innerHTML = val.checked ? 'Dark' : 'Light';
     themeChangers.forEach(
       (_, indexInner) =>
         (themeChangers[indexInner].checked = themeChangers[ind].checked),
     );
+    localStorage.setItem(
+      'theme',
+      themeChangers[ind].checked ? 'dark' : 'light',
+    );
   }),
 );
-
-// themeChangers.addEventListener('change', function () {
-//   localStorage.setItem('theme', themeChangers.checked ? 'dark' : 'light');
-
-//   html.setAttribute('theme-mode', themeChangers.checked ? 'dark' : 'light');
-//   console.log(themeChangers ? 'dark' : 'light');
-// });
 
 window.onstorage = (event) => {
   console.log(event.key + ' ' + event.newValue + ' ' + event.url);
 };
-
-// themeChangers.addEventListener('change', function () {
-//   localStorage.setItem('theme', themeChangers.checked ? 'dark' : 'light');
-
-//   html.setAttribute('theme-mode', themeChangers.checked ? 'dark' : 'light');
-//   console.log(themeChangers ? 'dark' : 'light');
-// });
-
-//  localStorage.setItem('theme', themeChangers.checked ? 'dark' : 'light');
-// if (localStorage.getItem('theme') == 'light') setLightTheme();
-// else setDarkTheme();

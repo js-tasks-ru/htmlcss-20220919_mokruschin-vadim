@@ -32,6 +32,10 @@
   border-radius: 50%;
 }
 
+.burger-menu__logo-link {
+  margin: 0 auto;
+}
+
 .burger-menu__icon-cross {
   height: 24px;
   width: 24px;

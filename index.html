@@ -21,7 +21,7 @@
                 </svg>
             </div>
             <div class="burger-menu__theme-section">
-                <p class="burger-menu__theme-section-text">Dark</p>
+                <p class="burger-menu__theme-section-text">Light</p>
                 <label class="toggler">
                     <input type="checkbox" class="toggler__input theme-changer">
                     <div class="toggler__state toggler__state_theme-switcher">
@@ -70,7 +70,9 @@
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__top-wrapper">
-                        <div class="header__burger-icon" id="burger-menu-open"></div>
+                        <svg class="header__burger-icon" id="burger-menu-open">
+                            <use href="/assets/images/icons-sprite.svg#burger-open"></use>
+                        </svg>
                         <svg class="header__logo">
                             <use href="/assets/images/icons-sprite.svg#logo"></use>
                         </svg>
@@ -109,7 +111,7 @@
         <section class="preview">
             <div class="container">
                 <div class="preview__cards-wrapper">
-                    <div class="card">
+                    <a class="card">
                         <div class="card__content-wrapper">
                             <div class="tooltip">
                                 <svg class="tooltip__trigger">
@@ -124,8 +126,8 @@
                             </h3>
                             <p class="card__subtitle">Container</p>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card">
                         <div class="card__content-wrapper">
                             <div class="card__content-wrapper-inputs">
                                 <label class="radio">
@@ -164,8 +166,8 @@
                             </h3>
                             <p class="card__subtitle">Element</p>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card">
                         <div class="card__content-wrapper">
                             <div class="calendar calendar_preview">
                                 <h5 class="calendar__title">
@@ -227,8 +229,8 @@
                             </h3>
                             <p class="card__subtitle">Container</p>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card">
                         <div class="card__content-wrapper" style="position: relative;">
                             <div class="modal modal_preview" id="modal">
                                 <div class="modal__dialog" style="width: 80%;">
@@ -252,7 +254,7 @@
                             </h3>
                             <p class="card__subtitle">Container</p>
                         </div>
-                    </div>
+                    </a>
                     <a class="card" href="/pages/histogram-page/histogram-page.html">
                         <div class="card__content-wrapper">
                             <div class="histogram histogram_preview">
@@ -325,7 +327,7 @@
                             <p class="card__subtitle">Element</p>
                         </div>
                     </a>
-                    <a class="card">
+                    <a class="card" href="">
                         <div class="card__content-wrapper">
                             <div class="skeleton">
                                 <div class="skeleton__abstract">
