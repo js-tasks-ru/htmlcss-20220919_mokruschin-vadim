@@ -12,6 +12,11 @@
   margin-right: 40px;
   position: relative;
   cursor: pointer;
+  transition: color 200ms ease;
+}
+
+.tabs__label:hover {
+  color: var(--selected-header-nav-link-color);
 }
 
 .tabs__label:after {
@@ -30,7 +35,6 @@
 .tabs__code-content {
   display: none;
   font-size: 16px;
-  min-height: 200px;
   margin-top: 34px;
   color: var(--primary-text-color);
   font-family: monospace;
@@ -38,6 +42,11 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  /* scrollbar-width: thin;
+  scrollbar-color: hsl(0 0% 50%); */
+  max-width: 100%;
 }
 
 .tabs__input {
@@ -59,4 +68,5 @@
 #tabs-input-1:checked~#tabs-content-1,
 #tabs-input-2:checked~#tabs-content-2 {
   display: block;
+  max-width: 100%;
 }

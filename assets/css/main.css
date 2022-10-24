@@ -4,6 +4,7 @@
 @import './reset.css';
 @import './variables.css';
 @import './container.css';
+@import './animations.css';
 
 /* COMPONENTS */
 @import '/components/macro-components/header/header.css';

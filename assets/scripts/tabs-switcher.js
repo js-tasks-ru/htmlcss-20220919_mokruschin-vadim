@@ -11,6 +11,8 @@ tab1.addEventListener('change', () => {
     content_tab1.style.display = 'block';
     content_tab2.style.display = 'none';
     content_tab3.style.display = 'none';
+
+    // content_tab1.classList.toggle()
   }
 });
 

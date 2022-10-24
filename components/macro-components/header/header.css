@@ -4,6 +4,7 @@
   font-family: 'Inter', sans-serif;
   background: var(--secondary-background-color);
   padding: 25px 0 13px;
+  transition: background 300ms ease;
 }
 
 .header_size_small {
@@ -20,7 +21,7 @@
 }
 
 .header_size_small .header__logo {
-  /* fill: var(--black);   */
+  /* fill: var(--black);  */
 }
 
 

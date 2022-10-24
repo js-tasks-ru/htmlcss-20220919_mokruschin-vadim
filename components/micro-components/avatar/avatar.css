@@ -7,6 +7,11 @@
     height: 102px;
 }
 
+.avatar_size_middle {
+  width: 204px;
+  height: 204px;
+}
+
 .avatar__img {
     width: 100%;
     height: 100%;

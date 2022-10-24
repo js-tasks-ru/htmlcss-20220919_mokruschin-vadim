@@ -21,6 +21,10 @@
   pointer-events: none;
 }
 
+.button:active {
+  transform: translateY(2px);
+}
+
 /* ==================== PRIMARY ========================== */
 
 .button_primary {
