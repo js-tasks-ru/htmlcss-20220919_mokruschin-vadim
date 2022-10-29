@@ -28,8 +28,8 @@
   font-size: 14px;
   line-height: 26px;
   cursor: pointer;
-  transition: all 0.25s ease;
-}
+  transition: transform 0.25s ease;
+}   
 
 .menu__point:hover {
   transform: translateX(5px);

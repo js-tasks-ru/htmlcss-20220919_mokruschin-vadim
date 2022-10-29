@@ -220,16 +220,185 @@
                                     <div class="tabs__code-content" id="tabs-content-1">
                                         <pre>
                                             <code>
+ &lt;div class=&quot;calendar&quot;&gt;
+    &lt;h5 class=&quot;calendar__title&quot;&gt;
+        October 2019
+    &lt;/h5&gt;
+    &lt;div class=&quot;calendar__grid&quot;&gt;
+        &lt;div class=&quot;calendar__weekdays-wrapper&quot;&gt;
+            &lt;p class=&quot;calendar__weekday-item&quot;&gt;Mon&lt;/p&gt;
+            &lt;p class=&quot;calendar__weekday-item&quot;&gt;Tue&lt;/p&gt;
+            &lt;p class=&quot;calendar__weekday-item&quot;&gt;Wed&lt;/p&gt;
+            &lt;p class=&quot;calendar__weekday-item&quot;&gt;Thu&lt;/p&gt;
+            &lt;p class=&quot;calendar__weekday-item&quot;&gt;Fri&lt;/p&gt;
+            &lt;p class=&quot;calendar__weekday-item&quot;&gt;Sat&lt;/p&gt;
+            &lt;p class=&quot;calendar__weekday-item&quot;&gt;Sun&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;calendar__dates-wrapper&quot;&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;1&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;2&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;3&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;4&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;5&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;6&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;7&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;8&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;9&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;10&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;11&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;12&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;13&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;14&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;15&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;16&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;17&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_external-selected&quot;&gt;18&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_inner-selected&quot;&gt;19&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_inner-selected&quot;&gt;20&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_inner-selected&quot;&gt;21&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_inner-selected&quot;&gt;22&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item calendar__date-item_external-selected&quot;&gt;23&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;24&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;25&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;26&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;27&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;28&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;29&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;30&lt;/div&gt;
+            &lt;div class=&quot;calendar__date-item&quot;&gt;31&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
                                             </code>
                                         </pre>
                                     </div>
                                     <div class="tabs__code-content" id="tabs-content-2">
-                                        <pre>
-                                            <code>
+                                        <figure>
+                                            <pre>
+                                                <code>
+.calendar {
+  box-sizing: border-box;
+  background: transparent;
+  outline: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 28px 26px 48px;
 
-                                            </code>
-                                        </pre>
+  font-family: 'Inter';
+  font-style: normal;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 24px;
+}
+
+.calendar_preview {
+  padding: 22px 22px 22px;
+}
+
+.calendar_element-page {
+  width: 300px;
+}
+
+.calendar__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  justify-self: center;
+  color: #334D6E;
+}
+
+.calendar__grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 16px;
+}
+
+.calendar__weekdays-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+}
+
+.calendar__weekday-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #90A0B7;
+}
+
+.calendar__dates-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.calendar__date-item {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #334D6E;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.calendar__date-item_external-selected {
+  background: #4263EB;
+  color: var(--white);
+}
+
+.calendar__date-item_inner-selected {
+  /* background: #A0B1F5; */
+  background: rgba(160, 177, 245, 0.2);
+}
+
+@media screen and (max-width:768px) {
+  .calendar_preview {
+    padding: 11px;
+    grid-row-gap: 12px;
+  }
+
+  .calendar_preview .calendar__title {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .calendar_preview .calendar__grid {
+    grid-row-gap: 5px;
+  }
+
+  .calendar_preview .calendar__weekday-item {
+    font-size: 7px;
+  }
+
+  .calendar_preview .calendar__date-item {
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .calendar_element-page {
+    padding: 22px 22px 22px;
+    aspect-ratio: 1 / 1;
+    width: 250px;
+  }
+}
+                                                </code>
+                                            </pre>
+                                        </figure>
                                     </div>
                                 </div>
                             </div>

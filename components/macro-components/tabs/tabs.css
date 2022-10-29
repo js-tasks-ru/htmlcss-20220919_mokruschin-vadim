@@ -1,5 +1,6 @@
 .tabs {
-  font-size: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .tabs__label {
@@ -8,8 +9,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--header-nav-link-color);
   margin-right: 40px;
+  color: var(--header-nav-link-color);
   position: relative;
   cursor: pointer;
   transition: color 200ms ease;
@@ -34,6 +35,7 @@
 
 .tabs__code-content {
   display: none;
+  box-sizing: border-box;
   font-size: 16px;
   margin-top: 34px;
   color: var(--primary-text-color);
@@ -66,7 +68,8 @@
 }
 
 #tabs-input-1:checked~#tabs-content-1,
-#tabs-input-2:checked~#tabs-content-2 {
+#tabs-input-2:checked~#tabs-content-2,
+#tabs-input-3:checked~#tabs-content-3 {
   display: block;
   max-width: 100%;
 }

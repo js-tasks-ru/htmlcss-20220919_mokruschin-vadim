@@ -35,23 +35,23 @@
 .input-group__input {
   width: 100%;
   padding: 17px 60px 13px 24px;
-  background: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 8px;
   outline: none;
   box-sizing: border-box;
+  background: transparent;
 
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: var(--grey-4);
+  color: var(--input-text-color);
 }
 
 .input-group__input:disabled {
-  background: var(--grey-1);
-  color: var(--grey-2);
+  background: var(--input-disabled-bg);
+  color: var(--input-disabled-color);
 }
 
 .input-group:not(.input-group_invalid) .input-group__input:focus {

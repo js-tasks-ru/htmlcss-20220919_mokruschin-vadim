@@ -148,48 +148,166 @@
                         <div class="element-guide">
                             <h3 class="element-guide__title">Custom form elements</h3>
                             <div class="element-guide__body">
-                                <div class="tabs element-guide__tabs">
-                                    <input
-                                        class="tabs__input"
-                                        id="tabs-input-1"
-                                        name="input-tabs"
-                                        type="radio"
-                                        checked
-                                    >
-                                    <label class="tabs__label" id="tabs-label-1" for="tabs-input-1">HTML</label>
-                                    <input
-                                        class="tabs__input"
-                                        id="tabs-input-2"
-                                        name="input-tabs"
-                                        type="radio"
-                                    >
-                                    <label class="tabs__label" id="tabs-label-2" for="tabs-input-2">CSS</label>
-                                    <div class="tabs__code-content" id="tabs-content-1">
-                                        <pre>
-                                            <code>
-                                                &lt;label class=&quot;radio&quot;&gt;
-                                            </code>
-                                        </pre>
+                                <div class="element-guide__box-1">
+                                    <div class="element-guide__castom-form-elements-box">
+                                        <p class="element-guide__castom-form-elements-box-title">Checkbox</p>
+                                        <div class="element-guide__box-2">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input">
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check-mark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="checkbox__title" for="click">Default</p>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" checked>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check-mark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="checkbox__title" for="click">Checked</p>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="checkbox__input"
+                                                    checked
+                                                    disabled
+                                                >
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check-mark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="checkbox__title" for="click">Disabled</p>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div class="tabs__code-content" id="tabs-content-2">
-                                        <pre>
-                                            <code>
-                                                .radio {
-    position: relative;
-    width: max-content;
-}
-                                            </code>
-                                        </pre>
+                                    <div class="element-guide__castom-form-elements-box">
+                                        <p class="element-guide__castom-form-elements-box-title">Radio</p>
+                                        <div class="element-guide__box-2">
+                                            <label class="radio">
+                                                <input type="radio" name="interactive" class="radio__input">
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__icon"></div>
+                                                    </div>
+                                                    <p class="radio__title">Default</p>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" class="radio__input" name="interactive" checked>
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__icon"></div>
+                                                    </div>
+                                                    <p class="radio__title">Selected</p>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" class="radio__input" disabled>
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__icon"></div>
+                                                    </div>
+                                                    <p class="radio__title">Disabled</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="element-guide__castom-form-elements-box">
+                                        <p class="element-guide__castom-form-elements-box-title">Toggler</p>
+                                        <div class="element-guide__box-2">
+                                            <label class="toggler">
+                                                <input type="checkbox" class="toggler__input">
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__icon"></div>
+                                                    </div>
+                                                    <p class="toggler__title">Off</p>
+                                                </div>
+                                            </label>
+                                            <label class="toggler">
+                                                <input type="checkbox" class="toggler__input" checked>
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__icon"></div>
+                                                    </div>
+                                                    <p class="toggler__title">On</p>
+                                                </div>
+                                            </label>
+                                            <label class="toggler">
+                                                <input type="checkbox" class="toggler__input" disabled>
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__icon"></div>
+                                                    </div>
+                                                    <p class="toggler__title">Disabled</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-guide__castom-form-elements-wrapper">
+                                <div class="element-guide__castom-form-elements-box">
+                                    <p class="element-guide__castom-form-elements-box-title">Input</p>
+                                    <div class="element-guide__inputs-box">
+                                        <div class="element-guide__inputs-box">
+                                            <div class="input-group">
+                                                <label class="input-group__title">Label</label>
+                                                <div class="input-group__input-field">
+                                                    <input type="text" class="input-group__input" placeholder="Placeholder">
+                                                    <div class="input-group__state-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group input-group_success">
+                                                <label class="input-group__title">Success</label>
+                                                <div class="input-group__input-field">
+                                                    <input type="text" class="input-group__input" value="Success">
+                                                    <div class="input-group__state-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group input-group_invalid">
+                                                <label class="input-group__title">Error</label>
+                                                <div class="input-group__input-field">
+                                                    <input type="text" class="input-group__input" value="Error">
+                                                    <div class="input-group__state-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="input-group__title">Disabled</label>
+                                                <div class="input-group__input-field">
+                                                    <input
+                                                        type="text"
+                                                        class="input-group__input"
+                                                        value="Disabled"
+                                                        disabled
+                                                    >
+                                                    <div class="input-group__state-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </main>
-            <footer class="footer footer_preview-template">
-                <p class="footer__text footer__text_preview-template">Reusable component library</p>
-            </footer>
-        </div>
-    </body>
+            </div>
+        </main>
+        <footer class="footer footer_preview-template">
+            <p class="footer__text footer__text_preview-template">Reusable component library</p>
+        </footer>
+    </div>
+</body>
 </html>

@@ -1,75 +1,78 @@
 .checkbox {
-    position: relative;
-    width: max-content;
+  position: relative;
+  width: max-content;
 }
 
 .checkbox__input {
-    position: absolute;
-    outline: none;
-    clip: rect(0, 0, 0, 0);
+  position: absolute;
+  outline: none;
+  clip: rect(0, 0, 0, 0);
 }
 
 .checkbox__state {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
 }
 
 .checkbox__control {
-    box-sizing: border-box;
-    width: 28px;
-    height: 28px;
-    border: 1px solid var(--grey-2);
-    border-radius: 4px;
-    background: var(--white);
-    display: grid;
-    place-items: center;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--grey-2);
+  border-radius: 4px;
+  transition: background 200ms ease;
+  display: grid;
+  place-items: center;
 }
 
 .checkbox__icon {
-    display: none;
-    width: 15px;
-    height: 13px;
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 200ms ease;
+  width: 15px;
+  height: 13px;
 }
 
 .checkbox__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-4);
-    position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+  position: relative;
 }
 
 .checkbox__input:focus~.checkbox__state .checkbox__title {
-    text-decoration: underline;
-    /* font-weight: 500; */
+  text-decoration: underline;
+  /* font-weight: 500; */
 }
 
 .checkbox__input:checked~.checkbox__state .checkbox__control {
-    background: #4263EB;
-    border-color: #4263EB;
+  background: #4263EB;
+  border-color: #4263EB;
 }
 
 .checkbox__input:checked~.checkbox__state .checkbox__icon {
-    display: block;
+  display: block;
+  opacity: 1;
 }
 
 .checkbox__input:disabled~.checkbox__state {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__control {
-    background: var(--grey-2);
-    border: none;
+  background: var(--grey-2);
+  border: none;
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__icon {
-    display: none;
+  display: none;
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__title {
-    color: var(--grey-2);
+  color: var(--grey-2);
 }

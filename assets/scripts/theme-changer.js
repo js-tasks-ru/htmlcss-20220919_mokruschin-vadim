@@ -3,6 +3,7 @@ const html = document.querySelector('html');
 const themeBurgerTextIndicator = document.querySelector(
   '.burger-menu__theme-section-text ',
 );
+let theme;
 
 themeChangers.forEach((val, ind) =>
   val.addEventListener('change', function () {
@@ -12,13 +13,20 @@ themeChangers.forEach((val, ind) =>
       (_, indexInner) =>
         (themeChangers[indexInner].checked = themeChangers[ind].checked),
     );
-    localStorage.setItem(
-      'theme',
-      themeChangers[ind].checked ? 'dark' : 'light',
-    );
+    theme = val.checked ? 'dark' : 'light';
+
+    document.cookie = `theme=${theme}; path=/`;
+    console.log(document.cookie);
   }),
 );
 
 window.onstorage = (event) => {
   console.log(event.key + ' ' + event.newValue + ' ' + event.url);
 };
+
+console.log(document.cookie);
+
+// localStorage.setItem(
+//   'theme',
+//   themeChangers[ind].checked ? 'dark' : 'light',
+// );

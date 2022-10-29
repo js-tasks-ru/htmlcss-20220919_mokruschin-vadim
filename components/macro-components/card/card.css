@@ -12,6 +12,17 @@
   flex-direction: column;
   justify-content: space-between;
   row-gap: 25px;
+
+  position: relative;
+}
+
+.card::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .card:hover {

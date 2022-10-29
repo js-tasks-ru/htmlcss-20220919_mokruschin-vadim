@@ -1,6 +1,9 @@
 html[theme-mode="light"] {
   --primary-background-color: var(--white-2);
   --secondary-background-color: var(--white);
+  --modal-background: rgba(196, 196, 196, 0.5);
+  --modal-dialog-background: var(--secondary-background-color);
+  --skeleton-color: var(--grey-2);
 
   --primary-text-color: var(--black);
   --secondary-text-color: var(--grey-3);
@@ -11,16 +14,20 @@ html[theme-mode="light"] {
   --burger-icon-color: var(--grey-4);
   --tooltip-icon-color: var(--black);
 
-  --modal-background: rgba(196, 196, 196, 0.5);
-  --modal-dialog-background: var(--secondary-background-color);
-
   --card-titles-wrapper-border-color: var(--grey-2);
   --preview-border-color: var(--grey-2);
+
+  --input-text-color: var(--grey-4);
+  --input-disabled-bg: var(--grey-1);
+  --input-disabled-color: var(--grey-2);
 }
 
 html[theme-mode="dark"] {
   --primary-background-color: var(--grey-5);
   --secondary-background-color: var(--black);
+  --modal-background: rgba(58, 39, 63, 0.5);
+  --modal-dialog-background: var(--secondary-background-color);
+  --skeleton-color: #33303e;
 
   --primary-text-color: var(--white-2);
   --secondary-text-color: var(--grey-3);
@@ -31,17 +38,19 @@ html[theme-mode="dark"] {
   --burger-icon-color: var(--primary-text-color);
   --tooltip-icon-color: var(--white);
 
-  --modal-background: rgba(58, 39, 63, 0.5);
-  --modal-dialog-background: var(--secondary-background-color);
-
   --card-titles-wrapper-border-color: var(--grey-5);
+
+  --input-text-color: var(--grey-3);
+  --input-disabled-bg: rgb(83, 83, 91);
+  --input-disabled-color: var(--grey-5);
 }
 
 :root {
 
   /* COLORS */
   --white: #ffffff;
-  --white-2: #F9FAFC;
+  /* --white-2: #F9FAFC; */
+  --white-2: #eef0f6;
   --white-3: #c7d0dd;
   --black: #212429;
   --black-2: 000000;

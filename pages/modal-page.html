@@ -1,195 +1,353 @@
-<!DOCTYPE html>
-<html lang="ru" theme-mode="light">
-    <head>
-        <title>Reusable component library</title>
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <link rel="shortcut icon" href="/assets/images/html_ico.png">
-        <script defer src="/assets/scripts/burger-menu.js"></script>
-        <script defer src="/assets/scripts/theme-changer.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="burger-menu" id="burger-menu">
-            <div class="burger-menu__header">
-                <div class="burger-menu__button-close" id="burger-menu-close">
-                    <div class="burger-menu__icon-cross"></div>
-                </div>
-                <a href="/index.html" class="burger-menu__logo-link">
-                    <svg class="burger-menu__header-logo">
-                        <use href="/assets/images/icons-sprite.svg#logo"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="burger-menu__theme-section">
-                <p class="burger-menu__theme-section-text">Light</p>
-                <label class="toggler">
-                    <input type="checkbox" class="toggler__input theme-changer">
-                    <div class="toggler__state toggler__state_theme-switcher">
-                        <svg class="toggler__icon-sun">
-                            <use href="/assets/images/icons-sprite.svg#sun"></use>
-                        </svg>
-                        <div class="toggler__control">
-                            <div class="toggler__icon"></div>
-                        </div>
-                        <svg class="toggler__icon-moon">
-                            <use href="/assets/images/icons-sprite.svg#moon"></use>
-                        </svg>
-                    </div>
-                </label>
-            </div>
-            <div class="menu burger-menu__menu">
-                <h4 class="menu__header">
-                    Components
-                </h4>
-                <div class="menu__main-section">
-                    <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
-                        Modal
-                    </a>
-                    <a href="/pages/tooltip-page.html" class="menu__point">
-                        Tooltip
-                    </a>
-                    <a href="/pages/avatar-page.html" class="menu__point">
-                        Avatar
-                    </a>
-                    <a href="/pages/calendar-page.html" class="menu__point">
-                        Calendar
-                    </a>
-                    <a href="/pages/accordion-page.html" class="menu__point">
-                        Accordion
-                    </a>
-                    <a href="/pages/histogram-page.html" class="menu__point">
-                        Histogram
-                    </a>
-                    <a href="/pages/skeleton-page.html" class="menu__point">
-                        Skeleton
-                    </a>
-                    <a href="/pages/custom-form-page.html" class="menu__point">
-                        Custom form elements
-                    </a>
-                </div>
-                <a href="/index.html" class="menu__point">
-                    Main page
-                </a>
-            </div>
-        </div>
-        <div class="preview-template">
-            <header class="header header_size_small">
-                <div class="container">
-                    <div class="header__top-wrapper">
-                        <svg class="header__burger-icon" id="burger-menu-open">
-                            <use href="/assets/images/icons-sprite.svg#burger-open"></use>
-                        </svg>
-                        <a href="/index.html">
-                            <svg class="header__logo">
-                                <use href="/assets/images/icons-sprite.svg#logo"></use>
-                            </svg>
-                        </a>
-                        <div class="header__right-side-wrapper">
-                            <div class="header__top-nav-wrapper">
-                                <a href="#" class="header__nav-link header__nav-link_selected">Components</a>
-                                <a href="#" class="header__nav-link">About</a>
-                                <a href="#" class="header__nav-link">Contact</a>
-                            </div>
-                            <label class="toggler">
-                                <input type="checkbox" class="toggler__input theme-changer">
-                                <div class="toggler__state toggler__state_theme-switcher">
-                                    <svg class="toggler__icon-sun">
-                                        <use href="/assets/images/icons-sprite.svg#sun"></use>
-                                    </svg>
-                                    <div class="toggler__control">
-                                        <div class="toggler__icon"></div>
-                                    </div>
-                                    <svg class="toggler__icon-moon">
-                                        <use href="/assets/images/icons-sprite.svg#moon"></use>
-                                    </svg>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <main class="preview-template__main">
-                <div class="container container_mod">
-                    <div class="preview-template__wrapper">
-                        <div class="menu preview-template__menu">
-                            <h4 class="menu__header">
-                                Components
-                            </h4>
-                            <div class="menu__main-section">
-                                <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
-                                    Modal
-                                </a>
-                                <a href="/pages/tooltip-page.html" class="menu__point">
-                                    Tooltip
-                                </a>
-                                <a href="/pages/avatar-page.html" class="menu__point">
-                                    Avatar
-                                </a>
-                                <a href="/pages/calendar-page.html" class="menu__point">
-                                    Calendar
-                                </a>
-                                <a href="/pages/accordion-page.html" class="menu__point">
-                                    Accordion
-                                </a>
-                                <a href="/pages/histogram-page.html" class="menu__point">
-                                    Histogram
-                                </a>
-                                <a href="/pages/skeleton-page.html" class="menu__point">
-                                    Skeleton
-                                </a>
-                                <a href="/pages/custom-form-page.html" class="menu__point">
-                                    Custom form elements
-                                </a>
-                            </div>
-                            <a href="/index.html" class="menu__point">
-                                Main page
-                            </a>
-                        </div>
-                        <div class="element-guide">
-                            <h3 class="element-guide__title">Modal</h3>
-                            <div class="element-guide__body">
-                                <div class="tabs element-guide__tabs">
-                                    <input
-                                        class="tabs__input"
-                                        id="tabs-input-1"
-                                        name="input-tabs"
-                                        type="radio"
-                                        checked
-                                    >
-                                    <label class="tabs__label" id="tabs-label-1" for="tabs-input-1">HTML</label>
-                                    <input
-                                        class="tabs__input"
-                                        id="tabs-input-2"
-                                        name="input-tabs"
-                                        type="radio"
-                                    >
-                                    <label class="tabs__label" id="tabs-label-2" for="tabs-input-2">CSS</label>
-                                    <div class="tabs__code-content" id="tabs-content-1">
+  <!DOCTYPE html>
+  <html lang="ru" theme-mode="light">
+      <head>
+          <title>Reusable component library</title>
+          <link rel="stylesheet" href="/assets/css/main.css">
+          <link rel="shortcut icon" href="/assets/images/html_ico.png">
+          <script defer src="/assets/scripts/burger-menu.js"></script>
+          <script defer src="/assets/scripts/theme-changer.js"></script>
+          <script defer src="/assets/scripts/modal.js"></script>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body>
+          <div class="modal " id="modal">
+              <div class="modal__dialog modal__dialog_size_standart">
+                  <div class="modal__header-wrapper">
+                      <h6 class="modal__title">
+                          Modal title
+                      </h6>
+                      <svg class="modal__close-cross" id="modal-close">
+                          <use href="../../../assets/images/icons-sprite.svg#cross"></use>
+                      </svg>
+                  </div>
+                  <p class="modal__body">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                  enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+              </div>
+          </div>
+          <div class="burger-menu" id="burger-menu">
+              <div class="burger-menu__header">
+                  <div class="burger-menu__button-close" id="burger-menu-close">
+                      <div class="burger-menu__icon-cross"></div>
+                  </div>
+                  <a href="/index.html" class="burger-menu__logo-link">
+                      <svg class="burger-menu__header-logo">
+                          <use href="/assets/images/icons-sprite.svg#logo"></use>
+                      </svg>
+                  </a>
+              </div>
+              <div class="burger-menu__theme-section">
+                  <p class="burger-menu__theme-section-text">Light</p>
+                  <label class="toggler">
+                      <input type="checkbox" class="toggler__input theme-changer">
+                      <div class="toggler__state toggler__state_theme-switcher">
+                          <svg class="toggler__icon-sun">
+                              <use href="/assets/images/icons-sprite.svg#sun"></use>
+                          </svg>
+                          <div class="toggler__control">
+                              <div class="toggler__icon"></div>
+                          </div>
+                          <svg class="toggler__icon-moon">
+                              <use href="/assets/images/icons-sprite.svg#moon"></use>
+                          </svg>
+                      </div>
+                  </label>
+              </div>
+              <div class="menu burger-menu__menu">
+                  <h4 class="menu__header">
+                      Components
+                  </h4>
+                  <div class="menu__main-section">
+                      <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
+                          Modal
+                      </a>
+                      <a href="/pages/tooltip-page.html" class="menu__point">
+                          Tooltip
+                      </a>
+                      <a href="/pages/avatar-page.html" class="menu__point">
+                          Avatar
+                      </a>
+                      <a href="/pages/calendar-page.html" class="menu__point">
+                          Calendar
+                      </a>
+                      <a href="/pages/accordion-page.html" class="menu__point">
+                          Accordion
+                      </a>
+                      <a href="/pages/histogram-page.html" class="menu__point">
+                          Histogram
+                      </a>
+                      <a href="/pages/skeleton-page.html" class="menu__point">
+                          Skeleton
+                      </a>
+                      <a href="/pages/custom-form-page.html" class="menu__point">
+                          Custom form elements
+                      </a>
+                  </div>
+                  <a href="/index.html" class="menu__point">
+                      Main page
+                  </a>
+              </div>
+          </div>
+          <div class="preview-template">
+              <header class="header header_size_small">
+                  <div class="container">
+                      <div class="header__top-wrapper">
+                          <svg class="header__burger-icon" id="burger-menu-open">
+                              <use href="/assets/images/icons-sprite.svg#burger-open"></use>
+                          </svg>
+                          <a href="/index.html">
+                              <svg class="header__logo">
+                                  <use href="/assets/images/icons-sprite.svg#logo"></use>
+                              </svg>
+                          </a>
+                          <div class="header__right-side-wrapper">
+                              <div class="header__top-nav-wrapper">
+                                  <a href="#" class="header__nav-link header__nav-link_selected">Components</a>
+                                  <a href="#" class="header__nav-link">About</a>
+                                  <a href="#" class="header__nav-link">Contact</a>
+                              </div>
+                              <label class="toggler">
+                                  <input type="checkbox" class="toggler__input theme-changer">
+                                  <div class="toggler__state toggler__state_theme-switcher">
+                                      <svg class="toggler__icon-sun">
+                                          <use href="/assets/images/icons-sprite.svg#sun"></use>
+                                      </svg>
+                                      <div class="toggler__control">
+                                          <div class="toggler__icon"></div>
+                                      </div>
+                                      <svg class="toggler__icon-moon">
+                                          <use href="/assets/images/icons-sprite.svg#moon"></use>
+                                      </svg>
+                                  </div>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+              </header>
+              <main class="preview-template__main">
+                  <div class="container container_mod">
+                      <div class="preview-template__wrapper">
+                          <div class="menu preview-template__menu">
+                              <h4 class="menu__header">
+                                  Components
+                              </h4>
+                              <div class="menu__main-section">
+                                  <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
+                                      Modal
+                                  </a>
+                                  <a href="/pages/tooltip-page.html" class="menu__point">
+                                      Tooltip
+                                  </a>
+                                  <a href="/pages/avatar-page.html" class="menu__point">
+                                      Avatar
+                                  </a>
+                                  <a href="/pages/calendar-page.html" class="menu__point">
+                                      Calendar
+                                  </a>
+                                  <a href="/pages/accordion-page.html" class="menu__point">
+                                      Accordion
+                                  </a>
+                                  <a href="/pages/histogram-page.html" class="menu__point">
+                                      Histogram
+                                  </a>
+                                  <a href="/pages/skeleton-page.html" class="menu__point">
+                                      Skeleton
+                                  </a>
+                                  <a href="/pages/custom-form-page.html" class="menu__point">
+                                      Custom form elements
+                                  </a>
+                              </div>
+                              <a href="/index.html" class="menu__point">
+                                  Main page
+                              </a>
+                          </div>
+                          <div class="element-guide">
+                              <h3 class="element-guide__title">Modal</h3>
+                              <div class="element-guide__body">
+                                  <button class="button button_primary" id="modal-open">Open modal</button>
+                                  <div class="tabs element-guide__tabs">
+                                      <input
+                                          class="tabs__input"
+                                          id="tabs-input-1"
+                                          name="input-tabs"
+                                          type="radio"
+                                          checked
+                                      >
+                                      <label class="tabs__label" id="tabs-label-1" for="tabs-input-1">HTML</label>
+                                      <input
+                                          class="tabs__input"
+                                          id="tabs-input-2"
+                                          name="input-tabs"
+                                          type="radio"
+                                      >
+                                      <label class="tabs__label" id="tabs-label-2" for="tabs-input-2">CSS</label>
+                                      <input
+                                          class="tabs__input"
+                                          id="tabs-input-3"
+                                          name="input-tabs"
+                                          type="radio"
+                                      >
+                                      <label class="tabs__label" id="tabs-label-3" for="tabs-input-3">JavaScript</label>
+                                      <div class="tabs__code-content" id="tabs-content-1">
+                                          <pre>
+                                              <code>
+&lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal__dialog modal__dialog_size_standart&quot;&gt;
+        &lt;div class=&quot;modal__header-wrapper&quot;&gt;
+            &lt;h6 class=&quot;modal__title&quot;&gt;
+                Modal title
+            &lt;/h6&gt;
+            &lt;svg class=&quot;modal__close-cross&quot; id=&quot;modal-close&quot;&gt;
+                &lt;use href=&quot;../../../assets/images/icons-sprite.svg#cross&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;modal__body&quot;&gt;
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                                              </code>
+                                          </pre>
+                                      </div>
+                                      <div class="tabs__code-content" id="tabs-content-2">
+                                          <pre>
+                                              <code>
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: var(--modal-background);
+    font-family: 'Inter';
+    font-style: normal;
+    z-index: 4;
+  }
+
+  .modal_preview {
+    display: block;
+    position: absolute;
+  }
+
+  .modal__dialog {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--modal-dialog-background);
+    padding: 12px 12px 33px 40px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 14px;
+  }
+
+  .modal__dialog_size_standart {
+    width: 428px;
+  }
+
+  .modal__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal__title {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: var(--primary-text-color);
+  }
+
+  .modal__close-cross {
+    height: 16px;
+    width: 16px;
+    color: #495057;
+    transition: color .35s ease;
+  }
+
+  .modal__close-cross:hover {
+    cursor: pointer;
+    color: #18191a;
+  }
+
+  .modal__body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    margin-right: 28px;
+  }
+
+  @media screen and (max-width:768px) {
+    .modal__dialog {
+      width: 80%;
+    }
+
+    .modal_preview .modal__title {
+      margin-top: 9px;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    .modal_preview .modal__body {
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 12px;
+      margin-right: 14px;
+    }
+
+    .modal_preview .modal__dialog {
+      padding: 6px 6px 16px 20px;
+      border-radius: 8px;
+      grid-row-gap: 7px;
+    }
+  }
+                                              </code>
+                                          </pre>
+                                      </div>
+                                      <div class="tabs__code-content" id="tabs-content-3">
                                         <pre>
                                             <code>
-                                                &lt;label class=&quot;radio&quot;&gt;
+(function () {
+  const close = document.getElementById('modal-close');
+  const modal = document.getElementById('modal');
+  const modalOpen = document.getElementById('modal-open');
+
+  if (!close || !modalOpen || !modal) {
+    return;
+  }
+
+  modalOpen.addEventListener('click', () => {
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  });
+
+  close.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'initial';
+  });
+})();
                                             </code>
                                         </pre>
                                     </div>
-                                    <div class="tabs__code-content" id="tabs-content-2">
-                                        <pre>
-                                            <code>
-                                                .radio {
-    position: relative;
-    width: max-content;
-}
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <footer class="footer footer_preview-template">
-                <p class="footer__text footer__text_preview-template">Reusable component library</p>
-            </footer>
-        </div>
-    </body>
-</html>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </main>
+              <footer class="footer footer_preview-template">
+                  <p class="footer__text footer__text_preview-template">Reusable component library</p>
+              </footer>
+          </div>
+      </body>
+  </html>

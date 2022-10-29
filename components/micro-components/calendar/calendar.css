@@ -31,6 +31,7 @@
 
 .calendar__grid {
   display: grid;
+  grid-template-columns: auto;
   grid-template-rows: auto 1fr;
   grid-row-gap: 16px;
 }
@@ -107,7 +108,8 @@
   }
 
   .calendar_element-page {
+    padding: 22px 22px 22px;
     aspect-ratio: 1 / 1;
-    max-width: 100%;
+    width: 250px;
   }
 }
