@@ -106,7 +106,7 @@
                         </nav>
                     </div>
                     <h1 class="header__title">Reusable component library</h1>
-                    <div class="tabs">
+                    <div class="tabs tabs_labels-only">
                         <input
                             class="tabs__input"
                             id="tabs-input-1"
@@ -114,27 +114,36 @@
                             type="radio"
                             checked
                         >
-                        <label class="tabs__label" id="tabs-label-1" for="tabs-input-1">All Components</label>
                         <input
                             class="tabs__input"
                             id="tabs-input-2"
                             name="input-tabs"
                             type="radio"
                         >
-                        <label class="tabs__label" id="tabs-label-2" for="tabs-input-2">Elements</label>
                         <input
                             class="tabs__input"
                             id="tabs-input-3"
                             name="input-tabs"
                             type="radio"
                         >
-                        <label class="tabs__label" id="tabs-label-3" for="tabs-input-3">Containers</label>
+                        <div class="tabs__menu">
+                            <input
+                                class="tabs__input"
+                                id="tabs-input-1"
+                                name="input-tabs"
+                                type="radio"
+                                checked
+                            >
+                            <label class="tabs__label" id="tabs-label-1" for="tabs-input-1">All Components</label>
+                            <label class="tabs__label" id="tabs-label-2" for="tabs-input-2">Elements</label>
+                            <label class="tabs__label" id="tabs-label-3" for="tabs-input-3">Containers</label>
+                        </div>
                     </div>
                 </div>
             </header>
             <section class="preview">
                 <div class="container">
-                    <div id="content-tab-1">
+                    <div class="tabs__content tabs__content_visible" id="content-tab-1">
                         <div class="preview__cards-wrapper">
                             <a href="/pages/tooltip-page.html" class="card">
                                 <div class="card__content-wrapper">
@@ -385,7 +394,7 @@
                             </a>
                         </div>
                     </div>
-                    <div id="content-tab-2" style="display: none;">
+                    <div class="tabs__content" id="content-tab-2">
                         <div class="preview__cards-wrapper">
                             <a class="card">
                                 <div class="card__content-wrapper">
@@ -468,7 +477,7 @@
                             </a>
                         </div>
                     </div>
-                    <div id="content-tab-3" style="display: none;">
+                    <div class="tabs__content" id="content-tab-3">
                         <div class="preview__cards-wrapper">
                             <a href="/pages/calendar-page.html" class="card">
                                 <div class="card__content-wrapper">

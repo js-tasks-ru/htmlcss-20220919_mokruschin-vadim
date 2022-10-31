@@ -3,7 +3,7 @@
   justify-content: center;
   font-family: 'Inter', sans-serif;
   background: var(--secondary-background-color);
-  padding: 25px 0 13px;
+  padding: 25px 0 0px;
   transition: background 300ms ease;
 }
 

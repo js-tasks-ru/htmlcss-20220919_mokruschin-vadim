@@ -49,10 +49,10 @@
   top: 0;
   bottom: 0;
   transform: translateX(-100%);
-  background: linear-gradient(90deg, #DDE2E5 0%, rgb(221, 226, 230) 20%, #F3F5F5 60%, rgb(223, 228, 231) 80%, #DDE2E5 100%);
-  animation: anim 1.5s infinite;
+  background: linear-gradient(90deg, var(--skeleton-color) 0%, var(--skeleton-gradient-color-1), var(--skeleton-gradient-color-2) 50%, var(--skeleton-gradient-color-1) 75%, var(--skeleton-color) 100%);
+  animation: anim 2s infinite;
 }
-
+   
 @keyframes anim {
   100% {
     transform: translateX(100%);

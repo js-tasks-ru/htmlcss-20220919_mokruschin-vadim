@@ -5,6 +5,7 @@
 @import './variables.css';
 @import './container.css';
 @import './animations.css';
+@import './atomic.css';
 
 /* COMPONENTS */
 @import '/components/macro-components/header/header.css';

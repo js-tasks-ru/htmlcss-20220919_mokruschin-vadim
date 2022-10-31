@@ -8,26 +8,24 @@ const content_tab3 = document.getElementById('content-tab-3');
 
 tab1.addEventListener('change', () => {
   if (tab1.checked) {
-    content_tab1.style.display = 'block';
-    content_tab2.style.display = 'none';
-    content_tab3.style.display = 'none';
-
-    // content_tab1.classList.toggle()
+    content_tab1.classList.add('tabs__content_visible');
+    content_tab2.classList.remove('tabs__content_visible');
+    content_tab3.classList.remove('tabs__content_visible');
   }
 });
 
 tab2.addEventListener('change', () => {
   if (tab2.checked) {
-    content_tab1.style.display = 'none';
-    content_tab2.style.display = 'block';
-    content_tab3.style.display = 'none';
+    content_tab1.classList.remove('tabs__content_visible');
+    content_tab2.classList.add('tabs__content_visible');
+    content_tab3.classList.remove('tabs__content_visible');
   }
 });
 
 tab3.addEventListener('change', () => {
   if (tab3.checked) {
-    content_tab1.style.display = 'none';
-    content_tab2.style.display = 'none';
-    content_tab3.style.display = 'block';
+    content_tab1.classList.remove('tabs__content_visible');
+    content_tab2.classList.remove('tabs__content_visible');
+    content_tab3.classList.add('tabs__content_visible');
   }
 });

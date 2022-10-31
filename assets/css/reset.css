@@ -24,7 +24,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -72,9 +71,8 @@ pre {
   padding: 0;
   margin: 0;
   white-space: pre-wrap;
-  /* overflow-x: auto;
-  overflow-y: hidden; */
-  /* border: 1px solid #777;   */
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 768px) {

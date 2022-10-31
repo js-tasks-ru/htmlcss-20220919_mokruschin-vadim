@@ -3,7 +3,6 @@ html[theme-mode="light"] {
   --secondary-background-color: var(--white);
   --modal-background: rgba(196, 196, 196, 0.5);
   --modal-dialog-background: var(--secondary-background-color);
-  --skeleton-color: var(--grey-2);
 
   --primary-text-color: var(--black);
   --secondary-text-color: var(--grey-3);
@@ -20,6 +19,10 @@ html[theme-mode="light"] {
   --input-text-color: var(--grey-4);
   --input-disabled-bg: var(--grey-1);
   --input-disabled-color: var(--grey-2);
+
+  --skeleton-color: var(--grey-2);
+  --skeleton-gradient-color-1: rgb(221, 226, 230);
+  --skeleton-gradient-color-2: #F3F5F5;
 }
 
 html[theme-mode="dark"] {
@@ -27,7 +30,6 @@ html[theme-mode="dark"] {
   --secondary-background-color: var(--black);
   --modal-background: rgba(58, 39, 63, 0.5);
   --modal-dialog-background: var(--secondary-background-color);
-  --skeleton-color: #33303e;
 
   --primary-text-color: var(--white-2);
   --secondary-text-color: var(--grey-3);
@@ -43,6 +45,10 @@ html[theme-mode="dark"] {
   --input-text-color: var(--grey-3);
   --input-disabled-bg: rgb(83, 83, 91);
   --input-disabled-color: var(--grey-5);
+
+  --skeleton-color: #33303e;
+  --skeleton-gradient-color-1: #333040;
+  --skeleton-gradient-color-2: #403b50;
 }
 
 :root {
