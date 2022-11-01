@@ -13,11 +13,14 @@
 @media screen and (max-width:768px) {
   .container {
     margin: 0 16px;
-    /* padding: 0 16px; */
   }
 
   .container_mod {
     margin: 0;
-    /* padding: 0; */
+  }
+
+  .container_nav {
+    margin: 0;
+    padding: 0 16px;
   }
 }
