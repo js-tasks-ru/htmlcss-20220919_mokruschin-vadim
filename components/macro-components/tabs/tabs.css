@@ -2,23 +2,15 @@
   position: relative;
 }
 
-.tabs_labels-only {
+.tabs_header-navigation{
   height: 37px;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
 }
 
-.tabs_labels-only::-webkit-scrollbar {
+.tabs_header-navigation::-webkit-scrollbar {
   display: none;
-}
-
-.tabs__menu {
-  /* height: 37px; */
-  /* width: 100%; */
-  /* overflow-x: auto; */
-  /* overflow-y: hidden; */
-  /* white-space: nowrap; */
 }
 
 .tabs__label {

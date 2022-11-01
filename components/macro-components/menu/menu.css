@@ -10,6 +10,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
+  transition: color 300ms ease;
 }
 
 .menu__main-section {
@@ -28,7 +29,7 @@
   font-size: 14px;
   line-height: 26px;
   cursor: pointer;
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, color 300ms ease;
 }   
 
 .menu__point:hover {

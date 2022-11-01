@@ -39,7 +39,7 @@
 .card__content-wrapper-inputs {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
 
 .card__titles-wrapper {
