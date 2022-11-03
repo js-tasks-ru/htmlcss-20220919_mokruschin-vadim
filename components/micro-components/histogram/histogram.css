@@ -1,80 +1,76 @@
 .histogram {
-    box-sizing: border-box;
-    background: var(white);
-    outline: 1px solid var(--grey-3);
-    border-radius: 8px;
-    padding: 16px 24px 24px 24px;
-    width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  outline: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 16px 24px 24px 24px;
+  width: 100%;
 }
-
-.histogram_preview {
-    /* margin: 0 25px; */
-}
-
 
 .histogram__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .histogram__header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .histogram__top-title-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 6px;
 }
 
 .histogram__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--black);
-    opacity: 0.8;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-text-color);
+  opacity: 0.8;
 }
 
 .histogram__view-link {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--histogram-column);
-    margin-top: 3px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--histogram-column);
+  margin-top: 3px;
+  cursor: pointer;
 }
 
 .histogram__amount {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--black);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--primary-text-color);
 }
 
 .histogram__chart {
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: flex-end;
-    height: 50px;
-    padding: 0 2px;
-    gap: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-end;
+  height: 50px;
+  padding: 0 2px;
+  gap: 1px;
 }
 
 .histogram__chart-column {
-    background: var(--histogram-column);
-    flex-grow: 1;
-    height: 0%;
-    transition: all 0.75s ease;
+  background: var(--histogram-column);
+  flex-grow: 1;
+  height: 0%;
+  transition: all 0.75s ease;
 }
 
 
@@ -82,43 +78,42 @@
 @media screen and (max-width:1280px) {}
 
 @media screen and (max-width:768px) {
-    .histogram {
-        padding: 8px 12px 12px 12px;
-    }
+  .histogram {
+    padding: 8px 12px 12px 12px;
+  }
 
-    .histogram__top-title-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 3px;
-    }
+  .histogram__top-title-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3px;
+  }
 
-    .histogram__header {
-        margin-bottom: 5px;
-    }
+  .histogram__header {
+    margin-bottom: 5px;
+  }
 
-    .histogram__chart {
-        padding: 0 1px;
-        height: 25px;
-    }
+  .histogram__chart {
+    padding: 0 1px;
+    height: 25px;
+  }
 
-    .histogram__title {
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 12px;
-    }
+  .histogram__title {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+  }
 
-    .histogram__view-link {
-        font-size: 8px;
-        line-height: 12px;
-        color: var(--histogram-column);
-        margin-top: 1.5px;
-    }
+  .histogram__view-link {
+    font-size: 8px;
+    line-height: 12px;
+    color: var(--histogram-column);
+    margin-top: 1.5px;
+  }
 
-    .histogram__amount {
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 13px;
-        color: var(--black);
-    }
+  .histogram__amount {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+  }
 }

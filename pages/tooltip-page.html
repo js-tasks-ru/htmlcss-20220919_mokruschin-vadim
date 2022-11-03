@@ -8,7 +8,7 @@
         <script defer src="/assets/scripts/theme-changer.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body class="overflow-y-scroll">
         <div class="burger-menu" id="burger-menu">
             <div class="burger-menu__header">
                 <div class="burger-menu__button-close" id="burger-menu-close">
@@ -42,10 +42,10 @@
                     Components
                 </h4>
                 <div class="menu__main-section">
-                    <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
+                    <a href="/pages/modal-page.html" class="menu__point">
                         Modal
                     </a>
-                    <a href="/pages/tooltip-page.html" class="menu__point">
+                    <a href="/pages/tooltip-page.html" class="menu__point menu__point_selected">
                         Tooltip
                     </a>
                     <a href="/pages/avatar-page.html" class="menu__point">
@@ -116,10 +116,10 @@
                                 Components
                             </h4>
                             <div class="menu__main-section">
-                                <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
+                                <a href="/pages/modal-page.html" class="menu__point">
                                     Modal
                                 </a>
-                                <a href="/pages/tooltip-page.html" class="menu__point">
+                                <a href="/pages/tooltip-page.html" class="menu__point menu__point_selected">
                                     Tooltip
                                 </a>
                                 <a href="/pages/avatar-page.html" class="menu__point">
@@ -146,8 +146,14 @@
                             </a>
                         </div>
                         <div class="element-guide">
-                            <h3 class="element-guide__title">Element Name</h3>
+                            <h3 class="element-guide__title">Tooltip</h3>
                             <div class="element-guide__body">
+                                <div class="tooltip" style="margin: 50px auto 0;">
+                                    <svg class="tooltip__trigger">
+                                        <use href=" /assets/images/icons-sprite.svg#question"></use>
+                                    </svg>
+                                    <div class="tooltip__helper">Helper Text</div>
+                                </div>
                                 <div class="tabs element-guide__tabs">
                                     <input
                                         class="tabs__input"
@@ -167,16 +173,76 @@
                                     <div class="tabs__code-content" id="tabs-content-1">
                                         <pre>
                                             <code>
-                                                &lt;label class=&quot;radio&quot;&gt;
+&lt;div class=&quot;tooltip&quot;&gt;
+    &lt;svg class=&quot;tooltip__trigger&quot;&gt;
+        &lt;use href=&quot; /assets/images/icons-sprite.svg#question&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;tooltip__helper&quot;&gt;Helper Text&lt;/div&gt;
+&lt;/div&gt;
                                             </code>
                                         </pre>
                                     </div>
                                     <div class="tabs__code-content" id="tabs-content-2">
                                         <pre>
                                             <code>
-                                                .radio {
-    position: relative;
-    width: max-content;
+.tooltip {
+  position: relative;
+  width: max-content;
+}
+
+.tooltip__trigger {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: #212429;
+  transition: all .35s ease;
+  fill: var(--tooltip-icon-color);
+}
+
+.tooltip__trigger:hover {
+  color: #4b4f56;
+}
+
+.tooltip__trigger:hover~.tooltip__helper {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip__helper {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  padding: 13px 21px 8px;
+  position: absolute;
+  bottom: calc(100% + 6px + 3px);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.20s ease;
+  background: var(--histogram-column);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  color: var(--grey-2);
+}
+
+.tooltip__helper_preview {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip__helper:after {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  border: 7px solid transparent;
+  border-top: 7px solid var(--histogram-column);
 }
                                             </code>
                                         </pre>

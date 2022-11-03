@@ -1,44 +1,109 @@
 .element-guide {
-    background: var(--white);
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
-    padding: 32px 48px;
+  background: var(--secondary-background-color);
+  transition: background 300ms ease;
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  padding: 32px 48px;
 
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-row-gap: 24px;
+  /* display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 24px; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .element-guide__title {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 38px;
-    color: var(--grey-4);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--primary-text-color);
+}
+
+.element-guide__tabs {
+  margin-top: 64px;
+}
+
+.element-guide__castom-form-elements-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.element-guide__castom-form-elements-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.element-guide__box-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 25px;
+}
+
+.element-guide__box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.element-guide__castom-form-elements-box-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: var(--primary-text-color);
+}
+
+.element-guide__inputs-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 25px;
 }
 
 .element-guide__body {}
 
 
 @media screen and (max-width:1280px) {
-    .element-guide {
-        padding: 32px 24px;
-    }
+  .element-guide {
+    padding: 32px 24px;
+  }
 
-    .element-guide__title {
-        font-size: 22px;
-    }
+  .element-guide__title {
+    font-size: 22px;
+  }
+
+  .element-guide__castom-form-elements-box-title {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width:768px) {
-    .element-guide {
-        border-radius: 0;
-        padding: 32px 16px 15px;
-    }
+  .element-guide {
+    border-radius: 0;
+    padding: 32px 16px 15px;
+  }
 
-    .element-guide__title {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 26px;
-        color: var(--grey-4);
-    }
+  .element-guide__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .element-guide__castom-form-elements-box-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:576px){
+  .element-guide__box-1{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

@@ -8,7 +8,7 @@
         <script defer src="/assets/scripts/theme-changer.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body class="overflow-y-scroll">
         <div class="burger-menu" id="burger-menu">
             <div class="burger-menu__header">
                 <div class="burger-menu__button-close" id="burger-menu-close">
@@ -42,7 +42,7 @@
                     Components
                 </h4>
                 <div class="menu__main-section">
-                    <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
+                    <a href="/pages/modal-page.html" class="menu__point">
                         Modal
                     </a>
                     <a href="/pages/tooltip-page.html" class="menu__point">
@@ -60,7 +60,7 @@
                     <a href="/pages/histogram-page.html" class="menu__point">
                         Histogram
                     </a>
-                    <a href="/pages/skeleton-page.html" class="menu__point">
+                    <a href="/pages/skeleton-page.html" class="menu__point menu__point_selected">
                         Skeleton
                     </a>
                     <a href="/pages/custom-form-page.html" class="menu__point">
@@ -116,7 +116,7 @@
                                 Components
                             </h4>
                             <div class="menu__main-section">
-                                <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
+                                <a href="/pages/modal-page.html" class="menu__point">
                                     Modal
                                 </a>
                                 <a href="/pages/tooltip-page.html" class="menu__point">
@@ -134,7 +134,7 @@
                                 <a href="/pages/histogram-page.html" class="menu__point">
                                     Histogram
                                 </a>
-                                <a href="/pages/skeleton-page.html" class="menu__point">
+                                <a href="/pages/skeleton-page.html" class="menu__point menu__point_selected">
                                     Skeleton
                                 </a>
                                 <a href="/pages/custom-form-page.html" class="menu__point">
@@ -146,8 +146,19 @@
                             </a>
                         </div>
                         <div class="element-guide">
-                            <h3 class="element-guide__title">Element Name</h3>
+                            <h3 class="element-guide__title">Skeleton</h3>
                             <div class="element-guide__body">
+                                <div class="skeleton">
+                                    <div class="skeleton__abstract">
+                                        <div class="skeleton__avatar"></div>
+                                        <div class="skeleton__titles-wrapper">
+                                            <div class="skeleton__stripe skeleton__stripe_size_sm"></div>
+                                            <div class="skeleton__stripe skeleton__stripe_size_md"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__stripe skeleton__stripe_size_lg"></div>
+                                    <div class="skeleton__stripe skeleton__stripe_size_lg"></div>
+                                </div>
                                 <div class="tabs element-guide__tabs">
                                     <input
                                         class="tabs__input"
@@ -167,16 +178,126 @@
                                     <div class="tabs__code-content" id="tabs-content-1">
                                         <pre>
                                             <code>
-                                                &lt;label class=&quot;radio&quot;&gt;
+&lt;div class=&quot;skeleton&quot;&gt;
+    &lt;div class=&quot;skeleton__abstract&quot;&gt;
+        &lt;div class=&quot;skeleton__avatar&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;skeleton__titles-wrapper&quot;&gt;
+            &lt;div class=&quot;skeleton__stripe skeleton__stripe_size_sm&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;skeleton__stripe skeleton__stripe_size_md&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;skeleton__stripe skeleton__stripe_size_lg&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;skeleton__stripe skeleton__stripe_size_lg&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
                                             </code>
                                         </pre>
                                     </div>
                                     <div class="tabs__code-content" id="tabs-content-2">
                                         <pre>
                                             <code>
-                                                .radio {
-    position: relative;
-    width: max-content;
+.skeleton {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  outline: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 24px 40px 32px 24px;
+  width: 100%;
+}
+
+.skeleton_preview {}
+
+.skeleton__abstract {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.skeleton__avatar {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background: var(--skeleton-color);
+  border-radius: 50%;
+  margin-right: 16px;
+  overflow: hidden;
+}
+
+.skeleton__titles-wrapper {
+  flex-grow: 1;
+}
+
+.skeleton__stripe {
+  position: relative;
+  height: 20px;
+  margin-bottom: 8px;
+  padding: 0;
+  background: var(--skeleton-color);
+  overflow: hidden;
+}
+
+.skeleton__avatar::after, .skeleton__stripe::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, #DDE2E5 0%, rgb(221, 226, 230) 20%, #F3F5F5 60%, rgb(223, 228, 231) 80%, #DDE2E5 100%);
+  animation: anim 1.5s infinite;
+}
+
+@keyframes anim {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton__avatar::after {
+  border-radius: 50%;
+}
+
+.skeleton__stripe:last-child {
+  margin-bottom: 0;
+}
+
+.skeleton__stripe:last-child {
+  margin-bottom: 0;
+}
+
+.skeleton__stripe_size_sm {
+  width: 39.5%;
+}
+
+.skeleton__stripe_size_md {
+  width: 59%;
+}
+
+.skeleton__stripe_size_lg {
+  width: 100%;
+}
+
+@media screen and (max-width:768px) {
+  .skeleton_preview {
+    padding: 12px 20px 16px 12px;
+  }
+
+  .skeleton_preview .skeleton__stripe {
+    height: 10px;
+  }
+
+  .skeleton_preview .skeleton__avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  .skeleton_preview .skeleton__abstract {
+    margin-bottom: 12px;
+  }
 }
                                             </code>
                                         </pre>

@@ -1,0 +1,104 @@
+.tabs {
+  position: relative;
+}
+
+.tabs_header-navigation{
+  height: 37px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.tabs_header-navigation::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs__label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 40px;
+  color: var(--header-nav-link-color);
+  position: relative;
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+
+.tabs__label:last-child {
+  margin-right: 0;
+}
+
+.tabs__label:hover {
+  color: var(--selected-header-nav-link-color);
+}
+
+.tabs__label:after {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 5px;
+  left: 0;
+  top: calc(100% + 11px);
+  background: var(--selected-header-nav-link-color);
+  transition: opacity 0.3s ease;
+}
+
+.tabs__content {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 400ms ease;
+  box-sizing: border-box;
+}
+
+.tabs__content_visible {
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tabs__code-content {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: transform 300ms ease;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 34px;
+  color: var(--primary-text-color);
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  display: grid;
+}
+
+.tabs__input {
+  display: none;
+}
+
+#tabs-input-1:checked~#tabs-label-1,
+#tabs-input-2:checked~#tabs-label-2,
+#tabs-input-3:checked~#tabs-label-3 {
+  color: var(--selected-header-nav-link-color);
+}
+
+#tabs-input-1:checked~#tabs-label-1:after,
+#tabs-input-2:checked~#tabs-label-2:after,
+#tabs-input-3:checked~#tabs-label-3:after {
+  opacity: 1;
+}
+
+#tabs-input-1:checked~#tabs-content-1,
+#tabs-input-2:checked~#tabs-content-2,
+#tabs-input-3:checked~#tabs-content-3 {
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+}

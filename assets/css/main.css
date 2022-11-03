@@ -2,6 +2,10 @@
 @import './reset.css';
 @import '../fonts/fonts.css';
 @import './reset.css';
+@import './variables.css';
+@import './container.css';
+@import './animations.css';
+@import './atomic.css';
 
 /* COMPONENTS */
 @import '/components/macro-components/header/header.css';
@@ -12,6 +16,7 @@
 @import '/components/macro-components/card/card.css';
 @import '/components/macro-components/burger-menu/burger-menu.css';
 @import '/components/macro-components/page-template/page-template.css';
+@import '/components/macro-components/tabs/tabs.css';
 
 @import '/components/micro-components/histogram/histogram.css';
 @import '/components/micro-components/button/button.css';
@@ -25,86 +30,3 @@
 @import '/components/micro-components/radio/radio.css';
 @import '/components/micro-components/toggler/toggler.css';
 @import '/components/micro-components/avatar/avatar.css';
-
-
-
-:root {
-
-  --main-text-color: var(--black);
-  /* --main-text-color: ; */
-
-  --primary-background-color: var(--white-2);
-  --secondary-background-color: var(--white);
-
-  /* COLORS */
-  --white: #ffffff;
-  --white-2: #F9FAFC;
-  --black: #212429;
-  --black-2: 000000;
-  --pink: #F784AD;
-  --purple-1: #7048E8;
-  --purple-2: #5028C6;
-  --blue-1: #374FC7;
-  --blue-2: #2342C0;
-  --blue-3: #4263EB;
-  --red: #F03D3E;
-  --grey-1: #F8F9FA;
-  --grey-2: #DDE2E5;
-  --grey-3: #ACB5BD;
-  --grey-4: #495057;
-
-  /* LAYER */
-  --error: var(--red);
-  --success: var(--blue-1);
-
-  --primary: var(--blue-1);
-  --primary-hover: var(--blue-2);
-  --primary-color: var(--white);
-  --secondary: var(--purple-1);
-  --secondary-hover: var(--purple-2);
-  --secondary-color: var(--white);
-
-  --alternate: var(--white);
-  --alternate-color: var(--grey-4);
-  --alternate-border: var(--grey-3);
-  --alternate-border-hover: var(--black);
-
-  --preview-bg: #F9FAFC;
-  --histogram-column: #4263EB;
-  --selected-point: #D84910;
-  --modal-title-color: #334D6E;
-
-  --opacity-disabled: 0.5;
-}
-
-* {
-  font-family: 'Roboto', sans-serif;
-}
-
-html, body {
-  min-height: 100vh;
-}
-
-.container {
-  width: 100%;
-  max-width: 1110px;
-}
-
-.container_mod {}
-
-@media screen and (max-width:1280px) {
-  .container {
-    max-width: 900px;
-    margin: 0 50px;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .container {
-    margin: 0 16px;
-  }
-
-  .container_mod {
-    margin: 0;
-  }
-}

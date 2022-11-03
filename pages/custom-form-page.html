@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru" theme-mode="light">
+    <head>
+        <title>Reusable component library</title>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="shortcut icon" href="/assets/images/html_ico.png">
+        <script defer src="/assets/scripts/burger-menu.js"></script>
+        <script defer src="/assets/scripts/theme-changer.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="overflow-y-scroll">
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-menu__header">
+                <div class="burger-menu__button-close" id="burger-menu-close">
+                    <div class="burger-menu__icon-cross"></div>
+                </div>
+                <a href="/index.html" class="burger-menu__logo-link">
+                    <svg class="burger-menu__header-logo">
+                        <use href="/assets/images/icons-sprite.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="burger-menu__theme-section">
+                <p class="burger-menu__theme-section-text">Light</p>
+                <label class="toggler">
+                    <input type="checkbox" class="toggler__input theme-changer">
+                    <div class="toggler__state toggler__state_theme-switcher">
+                        <svg class="toggler__icon-sun">
+                            <use href="/assets/images/icons-sprite.svg#sun"></use>
+                        </svg>
+                        <div class="toggler__control">
+                            <div class="toggler__icon"></div>
+                        </div>
+                        <svg class="toggler__icon-moon">
+                            <use href="/assets/images/icons-sprite.svg#moon"></use>
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="menu burger-menu__menu">
+                <h4 class="menu__header">
+                    Components
+                </h4>
+                <div class="menu__main-section">
+                    <a href="/pages/modal-page.html" class="menu__point">
+                        Modal
+                    </a>
+                    <a href="/pages/tooltip-page.html" class="menu__point">
+                        Tooltip
+                    </a>
+                    <a href="/pages/avatar-page.html" class="menu__point">
+                        Avatar
+                    </a>
+                    <a href="/pages/calendar-page.html" class="menu__point">
+                        Calendar
+                    </a>
+                    <a href="/pages/accordion-page.html" class="menu__point">
+                        Accordion
+                    </a>
+                    <a href="/pages/histogram-page.html" class="menu__point">
+                        Histogram
+                    </a>
+                    <a href="/pages/skeleton-page.html" class="menu__point">
+                        Skeleton
+                    </a>
+                    <a href="/pages/custom-form-page.html" class=" menu__point_selected menu__point">
+                        Custom form elements
+                    </a>
+                </div>
+                <a href="/index.html" class="menu__point">
+                    Main page
+                </a>
+            </div>
+        </div>
+        <div class="preview-template">
+            <header class="header header_size_small">
+                <div class="container">
+                    <div class="header__top-wrapper">
+                        <svg class="header__burger-icon" id="burger-menu-open">
+                            <use href="/assets/images/icons-sprite.svg#burger-open"></use>
+                        </svg>
+                        <a href="/index.html">
+                            <svg class="header__logo">
+                                <use href="/assets/images/icons-sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <div class="header__right-side-wrapper">
+                            <div class="header__top-nav-wrapper">
+                                <a href="#" class="header__nav-link header__nav-link_selected">Components</a>
+                                <a href="#" class="header__nav-link">About</a>
+                                <a href="#" class="header__nav-link">Contact</a>
+                            </div>
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input theme-changer">
+                                <div class="toggler__state toggler__state_theme-switcher">
+                                    <svg class="toggler__icon-sun">
+                                        <use href="/assets/images/icons-sprite.svg#sun"></use>
+                                    </svg>
+                                    <div class="toggler__control">
+                                        <div class="toggler__icon"></div>
+                                    </div>
+                                    <svg class="toggler__icon-moon">
+                                        <use href="/assets/images/icons-sprite.svg#moon"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="preview-template__main">
+                <div class="container container_mod">
+                    <div class="preview-template__wrapper">
+                        <div class="menu preview-template__menu">
+                            <h4 class="menu__header">
+                                Components
+                            </h4>
+                            <div class="menu__main-section">
+                                <a href="/pages/modal-page.html" class="menu__point">
+                                    Modal
+                                </a>
+                                <a href="/pages/tooltip-page.html" class="menu__point">
+                                    Tooltip
+                                </a>
+                                <a href="/pages/avatar-page.html" class="menu__point">
+                                    Avatar
+                                </a>
+                                <a href="/pages/calendar-page.html" class="menu__point">
+                                    Calendar
+                                </a>
+                                <a href="/pages/accordion-page.html" class="menu__point">
+                                    Accordion
+                                </a>
+                                <a href="/pages/histogram-page.html" class="menu__point">
+                                    Histogram
+                                </a>
+                                <a href="/pages/skeleton-page.html" class="menu__point">
+                                    Skeleton
+                                </a>
+                                <a href="/pages/custom-form-page.html" class="menu__point  menu__point_selected">
+                                    Custom form elements
+                                </a>
+                            </div>
+                            <a href="/index.html" class="menu__point">
+                                Main page
+                            </a>
+                        </div>
+                        <div class="element-guide">
+                            <h3 class="element-guide__title">Custom form elements</h3>
+                            <div class="element-guide__body">
+                                <div class="element-guide__box-1">
+                                    <div class="element-guide__castom-form-elements-box">
+                                        <p class="element-guide__castom-form-elements-box-title">Checkbox</p>
+                                        <div class="element-guide__box-2">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input">
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check-mark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="checkbox__title" for="click">Default</p>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" checked>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check-mark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="checkbox__title" for="click">Checked</p>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="checkbox__input"
+                                                    checked
+                                                    disabled
+                                                >
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon">
+                                                            <use href="/assets/images/icons-sprite.svg#check-mark"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="checkbox__title" for="click">Disabled</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="element-guide__castom-form-elements-box">
+                                        <p class="element-guide__castom-form-elements-box-title">Radio</p>
+                                        <div class="element-guide__box-2">
+                                            <label class="radio">
+                                                <input type="radio" name="interactive" class="radio__input">
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__icon"></div>
+                                                    </div>
+                                                    <p class="radio__title">Default</p>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input
+                                                    type="radio"
+                                                    class="radio__input"
+                                                    name="interactive"
+                                                    checked
+                                                >
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__icon"></div>
+                                                    </div>
+                                                    <p class="radio__title">Selected</p>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" class="radio__input" disabled>
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__icon"></div>
+                                                    </div>
+                                                    <p class="radio__title">Disabled</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="element-guide__castom-form-elements-box">
+                                        <p class="element-guide__castom-form-elements-box-title">Toggler</p>
+                                        <div class="element-guide__box-2">
+                                            <label class="toggler">
+                                                <input type="checkbox" class="toggler__input">
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__icon"></div>
+                                                    </div>
+                                                    <p class="toggler__title">Off</p>
+                                                </div>
+                                            </label>
+                                            <label class="toggler">
+                                                <input type="checkbox" class="toggler__input" checked>
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__icon"></div>
+                                                    </div>
+                                                    <p class="toggler__title">On</p>
+                                                </div>
+                                            </label>
+                                            <label class="toggler">
+                                                <input type="checkbox" class="toggler__input" disabled>
+                                                <div class="toggler__state">
+                                                    <div class="toggler__control">
+                                                        <div class="toggler__icon"></div>
+                                                    </div>
+                                                    <p class="toggler__title">Disabled</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-guide__castom-form-elements-wrapper">
+                                <div class="element-guide__castom-form-elements-box">
+                                    <p class="element-guide__castom-form-elements-box-title">Input</p>
+                                    <div class="element-guide__inputs-box">
+                                        <div class="element-guide__inputs-box">
+                                            <div class="input-group">
+                                                <label class="input-group__title">Label</label>
+                                                <div class="input-group__input-field">
+                                                    <input type="text" class="input-group__input" placeholder="Placeholder">
+                                                    <div class="input-group__state-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group input-group_success">
+                                                <label class="input-group__title">Success</label>
+                                                <div class="input-group__input-field">
+                                                    <input type="text" class="input-group__input" value="Success">
+                                                    <div class="input-group__state-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group input-group_invalid">
+                                                <label class="input-group__title">Error</label>
+                                                <div class="input-group__input-field">
+                                                    <input type="text" class="input-group__input" value="Error">
+                                                    <div class="input-group__state-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="input-group__title">Disabled</label>
+                                                <div class="input-group__input-field">
+                                                    <input
+                                                        type="text"
+                                                        class="input-group__input"
+                                                        value="Disabled"
+                                                        disabled
+                                                    >
+                                                    <div class="input-group__state-icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer footer_preview-template">
+                <p class="footer__text footer__text_preview-template">Reusable component library</p>
+            </footer>
+        </div>
+    </body>
+</html>

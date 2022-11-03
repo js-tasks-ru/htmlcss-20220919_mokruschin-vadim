@@ -6,10 +6,11 @@
 }
 
 .menu__header {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: var(--black-2);
+  transition: color 300ms ease;
 }
 
 .menu__main-section {
@@ -21,15 +22,15 @@
 }
 
 .menu__point {
+  color: var(--primary-text-color);
   text-decoration: none;
   width: max-content;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  color: var(--black-2);
   cursor: pointer;
-  transition: all 0.25s ease;
-}
+  transition: transform 0.25s ease, color 300ms ease;
+}   
 
 .menu__point:hover {
   transform: translateX(5px);

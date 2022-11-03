@@ -8,7 +8,7 @@
         <script defer src="/assets/scripts/theme-changer.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body class="overflow-y-scroll">
         <div class="burger-menu" id="burger-menu">
             <div class="burger-menu__header">
                 <div class="burger-menu__button-close" id="burger-menu-close">
@@ -42,7 +42,7 @@
                     Components
                 </h4>
                 <div class="menu__main-section">
-                    <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
+                    <a href="/pages/modal-page.html" class="menu__point">
                         Modal
                     </a>
                     <a href="/pages/tooltip-page.html" class="menu__point">
@@ -54,7 +54,7 @@
                     <a href="/pages/calendar-page.html" class="menu__point">
                         Calendar
                     </a>
-                    <a href="/pages/accordion-page.html" class="menu__point">
+                    <a href="/pages/accordion-page.html" class="menu__point menu__point_selected">
                         Accordion
                     </a>
                     <a href="/pages/histogram-page.html" class="menu__point">
@@ -116,7 +116,7 @@
                                 Components
                             </h4>
                             <div class="menu__main-section">
-                                <a href="/pages/modal-page.html" class="menu__point menu__point_selected">
+                                <a href="/pages/modal-page.html" class="menu__point">
                                     Modal
                                 </a>
                                 <a href="/pages/tooltip-page.html" class="menu__point">
@@ -128,7 +128,7 @@
                                 <a href="/pages/calendar-page.html" class="menu__point">
                                     Calendar
                                 </a>
-                                <a href="/pages/accordion-page.html" class="menu__point">
+                                <a href="/pages/accordion-page.html" class="menu__point menu__point_selected">
                                     Accordion
                                 </a>
                                 <a href="/pages/histogram-page.html" class="menu__point">
@@ -146,8 +146,53 @@
                             </a>
                         </div>
                         <div class="element-guide">
-                            <h3 class="element-guide__title">Element Name</h3>
+                            <h3 class="element-guide__title">Accordion</h3>
                             <div class="element-guide__body">
+                                <div class="accordion">
+                                    <details class="accordion__item" open>
+                                        <summary class="accordion__summary">
+                                            <p class="accordion__title">Accordion Item 1</p>
+                                            <svg class="accordion__arrow">
+                                                <use href="../../../assets/images/icons-sprite.svg#arrow"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                                        duis
+                                        enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            <p class="accordion__title">Accordion Item 2</p>
+                                            <svg class="accordion__arrow">
+                                                <use href="../../../assets/images/icons-sprite.svg#arrow"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officiaffff
+                                        consequat
+                                        duis
+                                        enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt
+                                        ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                                        duis
+                                        enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            <p class="accordion__title">Accordion Item 3</p>
+                                            <svg class="accordion__arrow">
+                                                <use href="../../../assets/images/icons-sprite.svg#arrow"></use>
+                                            </svg>
+                                        </summary>
+                                        <p class="accordion__text">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                                        duis
+                                        enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                </div>
                                 <div class="tabs element-guide__tabs">
                                     <input
                                         class="tabs__input"
@@ -165,21 +210,106 @@
                                     >
                                     <label class="tabs__label" id="tabs-label-2" for="tabs-input-2">CSS</label>
                                     <div class="tabs__code-content" id="tabs-content-1">
-                                        <pre>
-                                            <code>
-                                                &lt;label class=&quot;radio&quot;&gt;
-                                            </code>
-                                        </pre>
+                                      <pre>
+                                        <code>
+&lt;div class=&quot;accordion&quot;&gt;
+    &lt;details class=&quot;accordion__item&quot; open&gt;
+        &lt;summary class=&quot;accordion__summary&quot;&gt;
+            &lt;p class=&quot;accordion__title&quot;&gt;Accordion Item 1&lt;/p&gt;
+            &lt;svg class=&quot;accordion__arrow&quot;&gt;
+                &lt;use href=&quot;../../../assets/images/icons-sprite.svg#arrow&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;p class=&quot;accordion__text&quot;&gt;
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        &lt;/p&gt;
+    &lt;/details&gt;
+    &lt;details class=&quot;accordion__item&quot;&gt;
+        &lt;summary class=&quot;accordion__summary&quot;&gt;
+            &lt;p class=&quot;accordion__title&quot;&gt;Accordion Item 2&lt;/p&gt;
+            &lt;svg class=&quot;accordion__arrow&quot;&gt;
+                &lt;use href=&quot;../../../assets/images/icons-sprite.svg#arrow&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;p class=&quot;accordion__text&quot;&gt;
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        &lt;/p&gt;
+    &lt;/details&gt;
+    &lt;details class=&quot;accordion__item&quot;&gt;
+        &lt;summary class=&quot;accordion__summary&quot;&gt;
+            &lt;p class=&quot;accordion__title&quot;&gt;Accordion Item 3&lt;/p&gt;
+            &lt;svg class=&quot;accordion__arrow&quot;&gt;
+                &lt;use href=&quot;../../../assets/images/icons-sprite.svg#arrow&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;p class=&quot;accordion__text&quot;&gt;
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        &lt;/p&gt;
+    &lt;/details&gt;
+&lt;/div&gt;
+                                        </code>
+                                      </pre>
                                     </div>
                                     <div class="tabs__code-content" id="tabs-content-2">
-                                        <pre>
-                                            <code>
-                                                .radio {
-    position: relative;
-    width: max-content;
+                                      <pre>
+                                        <code>
+.accordion__item {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 24px 32px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+  transition: all 0.5s ease;
 }
-                                            </code>
-                                        </pre>
+
+.accordion__item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion__item[open] {
+  padding-bottom: 32px;
+}
+
+.accordion__item[open] .accordion__summary {
+  margin-bottom: 16px;
+}
+
+.accordion__item[open] .accordion__arrow {
+  transform: rotate(0);
+}
+
+
+.accordion__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__title {
+  color: var(--primary-text-color);
+}
+
+.accordion__arrow {
+  width: 18px;
+  height: 10px;
+  transform: rotate(180deg);
+}
+
+.accordion__arrow:hover {
+  cursor: pointer;
+}
+                                        </code>
+                                      </pre>
                                     </div>
                                 </div>
                             </div>
